@@ -1,34 +1,55 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+	Class Mymodel extends CI_Model{
 
-class Mymodel extends CI_Model {
+		function getData() {
+ 			$query = $this->db->get('booking');
+ 			return $query->result_array();
+ 		}
 
-	public function GetBarang($where=""){
-			$data = $this->db->query('select * from barang '.$where);
+ 		function getDataUser() {
+ 			$query = $this->db->get('user');
+ 			return $query->result_array();
+ 		}
+
+ 		public function GetProfile($where=""){
+			$data = $this->db->query('SELECT * FROM user '. $where);
 			return $data->result_array();
 		}
-	//public function Getimages($where=""){
-			//$data = $this->db->query('select * from images '.$where);
-			//return $data->result_array();
 
-	//}
+		function addData($data) {
+ 			$this->db->insert('user', $data);  
+ 		}
 
-		public function Insertdata($tabelName,$data){
-			$res = $this->db->Insert($tabelName,$data);
-			return $res;
+ 		function addBooking($data) {
+ 			$this->db->insert('booking', $data);  
+ 		}
 
+
+ 		function delete_item($item){
+			 $this->db->where_in('id', $item);
+			 $this->db->delete('booking');
 		}
 
-		public function UpdateData($tabelName,$data,$where){
-			$res = $this->db->Update($tabelName,$data,$where);
-			return $res;
-
+		function delete_user($item){
+			 $this->db->where_in('id', $item);
+			 $this->db->delete('user');
 		}
 
-		public function DeleteData($tabelName,$where){
-			$res = $this->db->Delete($tabelName,$where);
-			return $res;
-
+		public function update_profile($user, $data){
+		    $this->db->where('Username', $user);
+		    return $this->db->update('user', $data);
 		}
-	
+
+		public function update_profileAdmin($username, $data){
+		    $this->db->where('username', $username);
+		    return $this->db->update('admin', $data);
+		}
+
+		public function get_profile_id($username){ //read database
+		    $this->db->where('username', $username);
+		    $query = $this->db->get('user'); //mengambil data dari table barang dimana kode_barang = $kode_barang
+		    return $query->row_array(); //data disimpan dalam row
+		}
+
 	}
+?>
