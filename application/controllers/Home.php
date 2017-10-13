@@ -3,22 +3,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-	public function __construct() {
-  		parent::__construct();
-  		$this->load->model('Mymodel');
-  	//	$this->load->library('encryption');
- 	}
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('Mymodel');
+    //  $this->load->library('encryption');
+    }
 
- 	public function index() {
-		if($this->session->userdata('status') != "login"){
-			$this->load->view('viewHome');
-		}else{
-			$this->load->view('viewHomeUser');
-		}
-	}
+    public function index() {
+        if($this->session->userdata('status') != "login"){
+            $this->load->view('viewHome');
+        }else{
+            $this->load->view('viewHomeUser');
+        }
+    }
 
 
-	public function registerData(){
+    public function registerData(){
         if (isset($_POST['register-submit']))
         {
             $target = "./images/".basename($_FILES['Ufoto']['name']);
@@ -51,9 +51,9 @@ class Home extends CI_Controller {
     }
 
 
-	public function home(){
-		$this->load->view('viewHome');
-	}
+    public function home(){
+        $this->load->view('viewHome');
+    }
 
     public function viewProfile(){
         $session = (string)($this->session->userdata('nama'));
@@ -79,13 +79,13 @@ class Home extends CI_Controller {
         $this->load->library('upload');
         $is_submit = $this->input->post('is_submit');
 
-				//if(isset($is_submit) && $is_submit == 0){
-						//$this->load->view('viewProfil');
+                //if(isset($is_submit) && $is_submit == 0){
+                        //$this->load->view('viewProfil');
 
-				//}
-				//if(isset($is_submit) < 1){
-						//$this->load->view('viewProfil');
-				//}
+                //}
+                //if(isset($is_submit) < 1){
+                        //$this->load->view('viewProfil');
+                //}
 
         //if(isset($is_submit) && $is_submit < 1)
             //{   
@@ -94,9 +94,9 @@ class Home extends CI_Controller {
                 //$this->load->view('viewProfil', $data);
                 //redirect('index.php/Home/viewProfile');
             //}
-        if(isset($is_submit) && $is_submit == 1)
+        if(isset($is_submit) && $is_submit >= 1)
         //else
-	       {    
+           {    
                 $fileUpload = array();
                 $isUpload = FALSE;
                 $config = array(
@@ -125,10 +125,10 @@ class Home extends CI_Controller {
                     }
             }
         else
-    		{
+            {
 
-    			$data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
+                //$data['user'] = $this->Mymodel->get_profile_id($Username);
+                //$this->load->view('viewProfil', $data);
                  //redirect('index.php/Home/viewProfile');
             }
     }
