@@ -148,6 +148,7 @@ class Home extends CI_Controller {
                 $Uemail = $this->input->post('Uemail');
                 $Uphone = $this->input->post('Uphone');
                 $Uaddress = $this->input->post('Uaddress');
+                
                 $data =array(
                 'Username' => $Username,
                 'Upassword' => md5($password),
@@ -159,6 +160,12 @@ class Home extends CI_Controller {
 
                 $this->Mymodel->update_profile($user, $data);
                 redirect('index.php/Home/ViewProfile');
+            }
+
+            else
+            {
+                redirect('index.php/Home/ViewProfile');
+
             }
         }
 
