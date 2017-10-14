@@ -12,15 +12,14 @@ class Home extends CI_Controller {
  	public function index() {
 		if($this->session->userdata('status') != "login"){
 			$this->load->view('viewHome');
-		}else{
+		}else{ 
 			$this->load->view('viewHomeUser');
 		}
 	}
-
+	
 
 	public function registerData(){
-        if (isset($_POST['register-submit']))
-        {
+        if (isset($_POST['register-submit'])){
             $target = "./images/".basename($_FILES['Ufoto']['name']);
             $Username = $_POST['Username'];
             $Upassword = $_POST['Upassword'];
@@ -35,14 +34,12 @@ class Home extends CI_Controller {
                 'Uphone' => $Uphone,
                 'Ufoto' => $target
             );
-
-            if(is_uploaded_file($_FILES['Ufoto']['tmp_name']))
-            {
+            
+            if(is_uploaded_file($_FILES['Ufoto']['tmp_name'])){
                 move_uploaded_file($_FILES['Ufoto']['tmp_name'], $target);
                 $data['err_message'] = "REGISTER SUKSES";
                 $this->load->view('viewLogin', $data);
-            } 
-        else {
+            } else {
                 $data['err_message'] = "REGISTER SUKSES";
                 $this->load->view('viewLogin', $data);
             }
@@ -72,66 +69,40 @@ class Home extends CI_Controller {
         $this->load->view('viewProfil', $data);
     }
 
-    public function updatePhoto()
-    {
+    public function updatePhoto(){
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->library('upload');
         $is_submit = $this->input->post('is_submit');
+    
+        if(isset($is_submit) && $is_submit == 1){
+            $fileUpload = array();
+            $isUpload = FALSE;
+            $config = array(
+            'upload_path' => './images/',
+            'allowed_types' => 'jpg|jpeg|png',
+            'max_size' => 5210
+            );
+            $Username = (string)($this->session->userdata('nama'));
+            $this->upload->initialize($config);
+            if($this->upload->do_upload('userfile')){
+                $fileUpload = $this->upload->data();
+                $isUpload = TRUE;
+            }
 
-				//if(isset($is_submit) && $is_submit == 0){
-						//$this->load->view('viewProfil');
-
-				//}
-				//if(isset($is_submit) < 1){
-						//$this->load->view('viewProfil');
-				//}
-
-        //if(isset($is_submit) && $is_submit < 1)
-            //{   
-                //echo "No file selected";
-                //$data['user'] = $this->Mymodel->get_profile_id($Username);
-                //$this->load->view('viewProfil', $data);
-                //redirect('index.php/Home/viewProfile');
-            //}
-        if(isset($is_submit) && $is_submit == 1)
-        //else
-	       {    
-                $fileUpload = array();
-                $isUpload = FALSE;
-                $config = array(
-                'upload_path' => './images/',
-                'allowed_types' => 'jpg|jpeg|png',
-                'max_size' => 5210
+            if($isUpload){
+                $data =array(
+                'Ufoto' => './images/' . $fileUpload['file_name']
                 );
-                $Username = (string)($this->session->userdata('nama'));
-                $this->upload->initialize($config);
                 
-                    if($this->upload->do_upload('userfile'))
-                    {
-                        $fileUpload = $this->upload->data();
-                        $isUpload = TRUE;
-                    }
-
-                    if($isUpload)
-                    {
-                        $data =array
-                        (
-                        'Ufoto' => './images/' . $fileUpload['file_name']
-                        );
-
-                        $this->Mymodel->update_profile($Username, $data);
-                        redirect('index.php/Home/viewProfile');
-                    }
+                $this->Mymodel->update_profile($Username, $data);
+                redirect('index.php/Home/viewProfile');
             }
-        else
-    		{
-
-    			$data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
-                 //redirect('index.php/Home/viewProfile');
-            }
-    }
+        }else{
+            $data['user'] = $this->Mymodel->get_profile_id($Username);
+            $this->load->view('viewProfil', $data);
+        }
+  }
 
     public function updateProfile(){
         $this->load->helper('form');
@@ -148,7 +119,6 @@ class Home extends CI_Controller {
                 $Uemail = $this->input->post('Uemail');
                 $Uphone = $this->input->post('Uphone');
                 $Uaddress = $this->input->post('Uaddress');
-                
                 $data =array(
                 'Username' => $Username,
                 'Upassword' => md5($password),
@@ -157,15 +127,9 @@ class Home extends CI_Controller {
                 'Uphone' => $Uphone,
                 'Uaddress' => $Uaddress
                 );
-
+                
                 $this->Mymodel->update_profile($user, $data);
                 redirect('index.php/Home/ViewProfile');
-            }
-
-            else
-            {
-                redirect('index.php/Home/ViewProfile');
-
             }
         }
 
