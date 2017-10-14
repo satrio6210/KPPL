@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2017 at 09:33 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Generation Time: 12 Okt 2017 pada 23.56
+-- Versi Server: 10.1.13-MariaDB
+-- PHP Version: 7.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -38,22 +38,15 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`Uktp`, `Uname`, `Uemail`, `Username`, `Upassword`, `Uphone`, `Uaddress`, `Ufoto`) VALUES
+(52151151, 'sarah chairina melinda', 'sarahchairinam@gmail.com', 'sarahchair', 'CD3A77622EF59E64711DFD05F1A263A6', '08121212121', 'sadasdada', ''),
 (2147483647, 'admin', 'admin@admin.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', '88756466809', 'asdadasdada', ''),
-(0, 'cicici', 'cicici@cicici.com', 'cicici', 'ad1c64252b7ccf005981651925c17177', '023754234', 'wasdwasd', './images/ecommerce-collection-outlines-18-512.png');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`Username`);
+(0, 'sarah chairina melinda', 'sarahchairinam@gmail.com', 'sarahchair', '12a411335935d95909195dca72ecfbc3', '08123257362', '', './images/'),
+(0, 'cici', 'cici@cici.com', 'cici', '702e4946e6db9b7a74b921fe85e83f32', '081232461929', '', './images/Screenshot (11).png'),
+(0, 'cicici', 'cicici@cicici.com', 'cicici', 'ad1c64252b7ccf005981651925c17177', '023754234', '', './images/Screenshot_(9).png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
