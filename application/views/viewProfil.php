@@ -168,12 +168,20 @@
                   <input type="text" class="form-control" name="Uphone" id="Uphone" placeholder="Nomor Handphone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value="<?php echo $Uphone; ?>" />
                   <div class="validation" ></div>
                 </div>
+
+                <!--<div class="form-group">
+                  <input type="text" class="form-control" name="Uaddress" id="Uaddress" placeholder="Alamat" data-rule="required" data-msg="Please write something for us" value="<?php echo $Uaddress; ?>" />
+                  <div class="validation" ></div>
+                </div>-->
                 
                 <div class="form-group">
                   <textarea class="form-control" name="Uaddress" id="Uaddress" rows="5" cols="30" placeholder="Alamat" data-rule="required" data-msg="Please write something for us"><?php echo $Uaddress; ?></textarea>
+                 
+
                   <div class="validation"></div>
                 
                 </div>
+
               </div>
                 <div class="text-center"><button type="submit" value="Update">Update</button></div>
             </form>
