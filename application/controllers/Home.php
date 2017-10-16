@@ -115,7 +115,6 @@ class Home extends CI_Controller {
             if($isUpload){
                 $Username = $this->input->post('Username');
                 $Upassword = $this->input->post('Upassword');
-                $Uktp = $this->input->post('Uktp');
                 $Uname  = $this->input->post('Uname');
                 $Uemail = $this->input->post('Uemail');
                 $Uphone = $this->input->post('Uphone');
@@ -123,7 +122,6 @@ class Home extends CI_Controller {
                 $data =array(
                 'Username' => $Username,
                 'Upassword' => md5($password),
-                'Uktp' => $Uktp,
                 'Uname' => $Uname,
                 'Uemail' => $Uemail,
                 'Uphone' => $Uphone,
@@ -132,12 +130,6 @@ class Home extends CI_Controller {
                 
                 $this->Mymodel->update_profile($user, $data);
                 redirect('index.php/Home/ViewProfile');
-            }
-
-            else{
-                $data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
-
             }
         }
 
