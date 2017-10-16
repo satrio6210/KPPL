@@ -53,6 +53,9 @@ class Home extends CI_Controller {
 	}
 
     public function viewProfile(){
+        if($this->session->userdata('status') != "login"){
+            $this->load->view('viewHome');
+        }else{ 
         $session = (string)($this->session->userdata('nama'));
         $Username = $session;
         $profil = $this->Mymodel->GetProfile("where Username = '$Username'");
@@ -67,6 +70,7 @@ class Home extends CI_Controller {
             "Ufoto" => $profil[0]['Ufoto']
              );
         $this->load->view('viewProfil', $data);
+    }
     }
 
     public function updatePhoto(){

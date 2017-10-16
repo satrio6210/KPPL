@@ -1,5 +1,5 @@
 <?php
-class model_login extends CI_Model{
+class Model_login extends CI_Model{
 
 //    function login($Username,$Upassword){
   //      $cek = $this->db->get_where('user',array('Username'=>$Username,'Upassword'=>

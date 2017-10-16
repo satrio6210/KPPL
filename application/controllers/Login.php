@@ -4,7 +4,7 @@ class Login extends CI_Controller{
 
 	function __construct(){
 		parent::__construct();		
-		$this->load->model('model_login');
+		$this->load->model('Model_login');
 
 	}
 
@@ -26,7 +26,7 @@ class Login extends CI_Controller{
 			'Username' => $Username,
 			'Upassword' => md5($Upassword)
 			);
-		$cek = $this->model_login->cek_login("user",$where);
+		$cek = $this->Model_login->cek_login("user",$where);
 		if($cek->num_rows()==1){
 
 			$data_session = array(
