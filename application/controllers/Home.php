@@ -10,10 +10,10 @@ class Home extends CI_Controller {
  	}
 
  	public function index() {
-		if($this->session->userdata('status') != "login"){
-			$this->load->view('viewHome');
-		}else{ 
-			$this->load->view('viewHomeUser');
+		if($this->session->userdata('status'!='login'))
+                    {$this->load->view('viewHome');
+		}else
+                    {$this->load->view('viewHomeUser');
 		}
 	}
 	
@@ -47,16 +47,11 @@ class Home extends CI_Controller {
         }
     }
 
-
-	public function home(){
-		$this->load->view('viewHome');
-	}
-
     public function viewProfile(){
-        if($this->session->userdata('status') != "login"){
-            $this->load->view('viewHome');
-        }else{ 
-        $session = (string)($this->session->userdata('nama'));
+        if($this->session->userdata('status') != "login")
+            {$this->load->view('viewHome');
+        }else
+        {$session = (string)($this->session->userdata('nama'));
         $Username = $session;
         $profil = $this->Mymodel->GetProfile("where Username = '$Username'");
         $data = array(
@@ -108,7 +103,7 @@ class Home extends CI_Controller {
         }
   }
 
-    public function updateProfile(){
+ /*   public function updateProfile(){
         $this->load->helper('form');
         $this->load->library('form_validation');
 
@@ -143,6 +138,6 @@ class Home extends CI_Controller {
                 $this->load->view('viewProfil', $data);
 
             }
-        }
+        } */
 
 }

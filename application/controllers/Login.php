@@ -32,25 +32,25 @@ class Login extends CI_Controller{
 			$data_session = array(
 				'nama' => $Username,
 				'status' => "login",
-				'Uktp' => $Uktp,
-				'Username' => $username,
-				'Uname' => $Uname,
-				'Upassword' => md5($Upassword),
-				'Uphone' => $Uphone,
-				'Uaddress' => $Uaddress
+				//'Uktp' => $Uktp,
+				//'Username' => $username,
+				//'Uname' => $Uname,
+				//'Upassword' => md5($Upassword),
+				//'Uphone' => $Uphone,
+				//'Uaddress' => $Uaddress
 				);
 
 			$this->session->set_userdata($data_session);
 
 			redirect("index.php/Home");
-		}else{
-			$data['err_message'] = "USERNAME / PASSWORD SALAH";
+		}else{ $data['err_message'] = "USERNAME / PASSWORD SALAH";
 			$this->load->view('viewLogin', $data);
 		}
 	}
 
 	function logout(){
-		$this->session->sess_destroy();
-		redirect();
-	}
+            $this->session->unset_userdata('nama');
+            $this->session->unset_userdata('status');
+            $this->session->sess_destroy();
+            redirect(); }
 }

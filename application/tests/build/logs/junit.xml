@@ -1,594 +1,807 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="51" assertions="68" failures="10" errors="0" time="11.962298">
-    <testsuite name="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" fullPackage="Akun" tests="19" assertions="30" failures="2" errors="0" time="7.533981">
-      <testcase name="test_index_login_pencari" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="18" assertions="1" time="1.001926"/>
-      <testcase name="test_index_login_pemilik" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="27" assertions="1" time="0.162416"/>
-      <testcase name="test_index_login_admin" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="35" assertions="1" time="0.081655"/>
-      <testcase name="test_index_not_login" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="43" assertions="1" time="0.093081"/>
-      <testcase name="test_profil" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="49" assertions="2" time="0.774363">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Akun_test::test_profil
+  <testsuite name="CodeIgniter Application Test Suite" tests="13" assertions="24" failures="4" errors="1" time="1.004636">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="5" assertions="6" failures="4" errors="0" time="0.350516">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="18" assertions="1" time="0.072034"/>
+      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="25" assertions="1" time="0.064402">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_index_nosession
 Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
-&lt;meta name="author" content="FindingKost" /&gt;
-&lt;title&gt;FindingKos | Dewangga Prasetya Praja&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;nav class="indigo darken-4"&gt;
-&lt;div class="container"&gt;
-    &lt;div class="nav-wrapper"&gt;
-            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
-        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
-            Finding&lt;strong&gt;Kost&lt;/strong&gt;
-        &lt;/a&gt;
-        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
-            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
-        &lt;/a&gt;
-        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-        &lt;ul class="side-nav" id="mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/nav&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;
-    &lt;div class="col s12"&gt;
-        &lt;ul class="collection"&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
-                &lt;span class="title"&gt;Nama&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;h4&gt;Dewangga Prasetya Praja&lt;/h4&gt;
-                &lt;/p&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
-                &lt;span class="title"&gt;Alamat&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;strong&gt;123123123123&lt;/strong&gt;
-                &lt;/p&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
-                &lt;span class="title"&gt;Telepon&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;em&gt;2147483647&lt;/em&gt;
-                &lt;/p&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;email&lt;/i&gt;
-                &lt;span class="title"&gt;Email&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;b&gt;
-                        &lt;a href="mailto:dewzzpro@gmail.com"&gt;dewzzpro@gmail.com&lt;/a&gt;
-                    &lt;/b&gt;
-                &lt;/p&gt;
-                &lt;a href="mailto:dewzzpro@gmail.com" class="secondary-content"&gt;
-                    &lt;i class="material-icons"&gt;markunread_mailbox&lt;/i&gt;
-                &lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-    $(".button-collapse").sideNav();
-&lt;/script&gt;&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;em&gt;08562747444&lt;/em&gt;".
-
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php:53
-</failure>
-      </testcase>
-      <testcase name="test_profil_pencari" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="56" assertions="1" time="0.078232"/>
-      <testcase name="test_profil_pemilik" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="64" assertions="1" time="0.117421"/>
-      <testcase name="test_submit_masuk_nopassword" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="72" assertions="2" time="0.159869"/>
-      <testcase name="test_submit_masuk_nousername" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="82" assertions="2" time="0.596723"/>
-      <testcase name="test_submit_masuk_unmatch" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="92" assertions="2" time="0.095844"/>
-      <testcase name="test_submit_masuk" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="102" assertions="3" time="2.327144"/>
-      <testcase name="test_keluar" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="113" assertions="3" time="0.161782"/>
-      <testcase name="test_keluar_" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="122" assertions="3" time="0.082024"/>
-      <testcase name="test_masuk" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="129" assertions="2" time="0.220291"/>
-      <testcase name="test_profil_404" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="135" assertions="1" time="0.095914"/>
-      <testcase name="test_profil_no_param" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="142" assertions="1" time="0.109293"/>
-      <testcase name="test_method_404" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="148" assertions="1" time="0.133441"/>
-      <testcase name="test_APPPATH" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="154" assertions="1" time="0.041058"/>
-      <testcase name="test_daftar_keluar_" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="165" assertions="1" time="1.201504">
-        <failure type="PHPUnit_Framework_AssertionFailedError">Akun_test::test_daftar_keluar_
-redirect() is not called.
-
-C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:360
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php:175
-</failure>
-      </testcase>
-    </testsuite>
-    <testsuite name="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" fullPackage="Kos" tests="9" assertions="12" failures="2" errors="0" time="1.651103">
-      <testcase name="test_index" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="18" assertions="1" time="0.817417"/>
-      <testcase name="test_cari" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="24" assertions="1" time="0.096591">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_test::test_cari
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
-&lt;meta name="author" content="FindingKost" /&gt;
-&lt;title&gt;FindingKost | Kos&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;nav class="indigo darken-4"&gt;
-&lt;div class="container"&gt;
-    &lt;div class="nav-wrapper"&gt;
-            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
-        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
-            Finding&lt;strong&gt;Kost&lt;/strong&gt;
-        &lt;/a&gt;
-        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
-            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
-        &lt;/a&gt;
-        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-        &lt;ul class="side-nav" id="mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/nav&gt;&lt;div class="container"&gt;
-    &lt;!-- Search Bar --&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="input-field col s12 m6"&gt;
-    &lt;i class="material-icons prefix"&gt;location_on&lt;/i&gt;
-        &lt;input type="text" id="autocomplete-input" class="autocomplete"&gt;
-    &lt;label for="autocomplete-input"&gt;Lokasi Daerah&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="input-field col s12 m6"&gt;
-    &lt;select multiple&gt;
-        &lt;option value="" disabled selected&gt;Choose your option&lt;/option&gt;
-        &lt;option value="1"&gt;Option 1&lt;/option&gt;
-        &lt;option value="2"&gt;Option 2&lt;/option&gt;
-        &lt;option value="3"&gt;Option 3&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;label&gt;Materialize Multiple Select&lt;/label&gt;
-&lt;/div&gt;    &lt;/div&gt;
-    &lt;!-- Pagination --&gt;
-    &lt;div class="row text-center"&gt;
-        &lt;div class="col s12"&gt;
-            &lt;ul class="pagination "&gt;
-                &lt;div class="center-align"&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="prev"&gt;&lt;i class="material-icons"&gt;chevron_left&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="start"&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class="active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- Kos --&gt;
-    &lt;div class="row"&gt;
-        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" class="materialboxed" alt="2" /&gt;
-            &lt;span class="card-title"&gt;2&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/1"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/foto.jpg" class="materialboxed" alt="5" /&gt;
-            &lt;span class="card-title"&gt;5&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;Mulyosari Utara VII Mulyosari Surabaya&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkir&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/2"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/rungkut.jpg" class="materialboxed" alt="7" /&gt;
-            &lt;span class="card-title"&gt;7&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;rungkut menanggal harapan s-11&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Tempat Parkir &lt;br&gt;AC&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 600.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/3"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/kedung.jpg" class="materialboxed" alt="8" /&gt;
-            &lt;span class="card-title"&gt;8&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;jalan kedung klinter 5/4 surabaya&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Tempat Parkir&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 550.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/4"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/ketintang.jpg" class="materialboxed" alt="9" /&gt;
-            &lt;span class="card-title"&gt;9&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;ketandan kidul VI, Surabaya&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkiran &lt;br&gt;Dapur &lt;br&gt;AC&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 550.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/5"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-        &lt;div class="col s12 m6 l4"&gt;
-    &lt;div class="card large"&gt;
-        &lt;div class="card-image"&gt;
-            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/bubutan.jpg" class="materialboxed" alt="10" /&gt;
-            &lt;span class="card-title"&gt;10&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="card-content"&gt;
-            &lt;p&gt;&lt;strong&gt;jalan bubutan V/15-17, Surabaya&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkiran &lt;br&gt;Dapur &lt;br&gt;AC&lt;/p&gt;
-            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
-        &lt;/div&gt;
-        &lt;div class="card-action"&gt;
-            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/6"&gt;Lihat selengkapnya&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;        
-    &lt;/div&gt;
-    &lt;!-- Pagination --&gt;
-    &lt;div class="row text-center"&gt;
-        &lt;div class="col s12"&gt;
-            &lt;ul class="pagination "&gt;
-                &lt;div class="center-align"&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="prev"&gt;&lt;i class="material-icons"&gt;chevron_left&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="start"&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class="active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-    $(".button-collapse").sideNav();
-&lt;/script&gt;    &lt;script&gt;
-    $('input.autocomplete').autocomplete({
-      data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": 'http://placehold.it/250x250'
-      }
-    });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
-
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php:27
-</failure>
-      </testcase>
-      <testcase name="test_detail" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="30" assertions="4" time="0.300987">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_test::test_detail
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
-&lt;meta name="author" content="FindingKost" /&gt;
-&lt;title&gt;FindingKost | Redian Galih Irianti&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;nav class="indigo darken-4"&gt;
-&lt;div class="container"&gt;
-    &lt;div class="nav-wrapper"&gt;
-            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
-        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
-            Finding&lt;strong&gt;Kost&lt;/strong&gt;
-        &lt;/a&gt;
-        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
-            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
-        &lt;/a&gt;
-        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-        &lt;ul class="side-nav" id="mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/nav&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;
-    &lt;div class="col s12 m6 l5"&gt;
-        &lt;div class="card"&gt;
-            &lt;div class="card-image waves-effect waves-block waves-light"&gt;
-                &lt;img class="activator" src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" alt="FindingKost" /&gt;
-            &lt;/div&gt;
-            &lt;div class="card-content"&gt;
-                &lt;span class="card-title activator grey-text text-darken-4"&gt;
-                    LIHAT &lt;b&gt;FASILITAS&lt;/b&gt; !
-                    &lt;i class="material-icons right"&gt;more_vert&lt;/i&gt;
-                &lt;/span&gt;
-                &lt;p&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/masuk"&gt;Masuk&lt;/a&gt; terlebih dahulu, untuk daftar kos &lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="card-reveal"&gt;
-                &lt;span class="card-title grey-text text-darken-4"&gt;
-                    Fasilitas&lt;i class="material-icons right"&gt;close&lt;/i&gt;
-                &lt;/span&gt;
-                &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col s12 m6 l7"&gt;
-        &lt;ul class="collection"&gt;
-            &lt;a href="http://localhost/C:\xampp\php\phpunit/akun/profil/rediangalih"&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
-                &lt;span class="title"&gt;Nama Pemilik&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;h4&gt;Redian Galih Irianti&lt;/h4&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;/a&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
-                &lt;span class="title"&gt;Alamat&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
-                &lt;span class="title"&gt;Telepon&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;em&gt;81675438&lt;/em&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;payment&lt;/i&gt;
-                &lt;span class="title"&gt;Harga&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;mark&gt;&lt;b&gt;Rp 500.000,00 / bulan-&lt;/b&gt;&lt;/mark&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-    $(".button-collapse").sideNav();
-&lt;/script&gt;&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
-
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php:36
-</failure>
-      </testcase>
-      <testcase name="test_detail_notlogin" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="39" assertions="1" time="0.068874"/>
-      <testcase name="test_detail_login_pencari" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="45" assertions="1" time="0.084098"/>
-      <testcase name="test_detail_login_penghuni" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="54" assertions="1" time="0.095960"/>
-      <testcase name="test_method_404" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="63" assertions="1" time="0.057584"/>
-      <testcase name="test_detail_404" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="68" assertions="1" time="0.104003"/>
-      <testcase name="test_APPPATH" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="74" assertions="1" time="0.025589"/>
-    </testsuite>
-    <testsuite name="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" fullPackage="Pencari" tests="7" assertions="8" failures="2" errors="0" time="0.980048">
-      <testcase name="test_index_login_pencari" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="18" assertions="1" time="0.135397"/>
-      <testcase name="test_index_login_pemilik" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="27" assertions="1" time="0.068674"/>
-      <testcase name="test_index_login_admin" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="35" assertions="1" time="0.065310"/>
-      <testcase name="test_index_not_login" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="43" assertions="1" time="0.067306"/>
-      <testcase name="test_mykos_terdaftar" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="49" assertions="2" time="0.194241">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Pencari_test::test_mykos_terdaftar
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
-&lt;meta name="author" content="FindingKost" /&gt;
-&lt;title&gt;FindingKost | &lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
-&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;nav class="indigo darken-4"&gt;
-&lt;div class="container"&gt;
-    &lt;div class="nav-wrapper"&gt;
-            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
-        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
-            Finding&lt;strong&gt;Kost&lt;/strong&gt;
-        &lt;/a&gt;
-        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
-            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
-        &lt;/a&gt;
-        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt; CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun"&gt;&lt;i class="material-icons right"&gt;person_pin&lt;/i&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/keluar"&gt;&lt;i class="material-icons right"&gt;power_settings_new&lt;/i&gt; KELUAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-        &lt;ul class="side-nav" id="mobile"&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt; CARI&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun"&gt;&lt;i class="material-icons right"&gt;person_pin&lt;/i&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/keluar"&gt;&lt;i class="material-icons right"&gt;power_settings_new&lt;/i&gt; KELUAR&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/nav&gt;    &lt;div class="row"&gt;
-    &lt;div class="col s12 m6 l6"&gt;
-        &lt;div class="card"&gt;
-            &lt;div class="card-image waves-effect waves-block waves-light"&gt;
-                &lt;img class="activator" src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" alt="FindingKost" /&gt;
-            &lt;/div&gt;
-            &lt;div class="card-content"&gt;
-                &lt;span class="card-title activator grey-text text-darken-4"&gt;
-                    FASILITAS
-                    &lt;i class="material-icons right"&gt;more_vert&lt;/i&gt;
-                &lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class="card-reveal"&gt;
-                &lt;span class="card-title grey-text text-darken-4"&gt;
-                    Fasilitas&lt;i class="material-icons right"&gt;close&lt;/i&gt;
-                &lt;/span&gt;
-                &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col s12 m6 l6"&gt;
-        &lt;ul class="collection"&gt;
-            &lt;a href="http://localhost/C:\xampp\php\phpunit/akun/profil/rediangalih"&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
-                &lt;span class="title"&gt;Nama Pemilik&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;h4&gt;Redian Galih Irianti&lt;/h4&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;/a&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
-                &lt;span class="title"&gt;Alamat&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
-                &lt;span class="title"&gt;Telepon&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;em&gt;81675438&lt;/em&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="collection-item avatar"&gt;
-                &lt;i class="material-icons circle blue"&gt;payment&lt;/i&gt;
-                &lt;span class="title"&gt;Harga&lt;/span&gt;
-                &lt;p&gt;
-                    &lt;mark&gt;&lt;b&gt;Rp 500.000,00 / bulan-&lt;/b&gt;&lt;/mark&gt;
-                &lt;/p&gt;
-                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
+  &lt;meta content="" name="keywords"&gt;
+  &lt;meta content="" name="description"&gt;
     
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-    $(".button-collapse").sideNav();
-&lt;/script&gt;&lt;/body&gt;
-&lt;/html&gt;
-' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
+  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
+  &lt;meta property="og:title" content=""&gt;
+  &lt;meta property="og:image" content=""&gt;
+  &lt;meta property="og:url" content=""&gt;
+  &lt;meta property="og:site_name" content=""&gt;
+  &lt;meta property="og:description" content=""&gt;
+  
+  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
+  &lt;meta name="twitter:card" content="summary"&gt;
+  &lt;meta name="twitter:site" content=""&gt;
+  &lt;meta name="twitter:title" content=""&gt;
+  &lt;meta name="twitter:description" content=""&gt;
+  &lt;meta name="twitter:image" content=""&gt;
+  
+  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
+  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
+  
+  &lt;!-- Google Fonts --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
+  
+  &lt;!-- Bootstrap CSS File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Libraries CSS Files --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Main Stylesheet File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
+  
+&lt;!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= --&gt;
+&lt;/head&gt;
 
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php:57
+&lt;body&gt;
+  &lt;div id="preloader"&gt;&lt;/div&gt;
+  
+&lt;!--==========================
+  Hero Section
+============================--&gt;
+  &lt;section id="hero"&gt;
+    &lt;div class="hero-container"&gt;
+      &lt;div class="wow fadeIn"&gt;
+        &lt;div class="hero-logo"&gt;
+          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
+        &lt;/div&gt;
+        
+        &lt;h1&gt;Welcome to Tekumamba,  ! &lt;/h1&gt;
+        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
+        &lt;div class="actions"&gt;
+          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
+          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+&lt;!--==========================
+  Header Section
+============================--&gt;
+  &lt;header id="header"&gt;
+    &lt;div class="container"&gt;
+    
+      &lt;div id="logo" class="pull-left"&gt;
+        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
+        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
+        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
+      &lt;/div&gt;
+        
+      &lt;nav id="nav-menu-container"&gt;
+        &lt;ul class="nav-menu"&gt;
+          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt; --&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+
+        &lt;/ul&gt;
+      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;&lt;!-- #header --&gt;
+    
+&lt;!--==========================
+  About Section
+============================--&gt;
+  &lt;section id="about"&gt;
+    &lt;div class="container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-12"&gt;
+          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
+          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
+          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="container about-container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
+          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
+          &lt;p class="about-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+
+  
+&lt;!--==========================
+  Footer
+============================--&gt; 
+  &lt;footer id="footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;div class="copyright"&gt;
+              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
+            &lt;/div&gt;
+            &lt;div class="credits"&gt;
+              &lt;!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              --&gt;
+              Special thanks to BootstrapMade&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/footer&gt;&lt;!-- #footer --&gt;
+  
+  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
+    
+  &lt;!-- Required JavaScript Libraries --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Template Specisifc Custom Javascript File --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
+  
+    
+&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;".
+
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:29
 </failure>
       </testcase>
-      <testcase name="test_mykos_belumterdaftar" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="61" assertions="1" time="0.123159"/>
-      <testcase name="test_daftar_" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="72" assertions="1" time="0.325961">
-        <failure type="PHPUnit_Framework_AssertionFailedError">Pencari_test::test_daftar_
-redirect() is not called.
+      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="32" assertions="1" time="0.064004">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_index_namasessionsalah
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
+  &lt;meta content="" name="keywords"&gt;
+  &lt;meta content="" name="description"&gt;
+    
+  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
+  &lt;meta property="og:title" content=""&gt;
+  &lt;meta property="og:image" content=""&gt;
+  &lt;meta property="og:url" content=""&gt;
+  &lt;meta property="og:site_name" content=""&gt;
+  &lt;meta property="og:description" content=""&gt;
+  
+  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
+  &lt;meta name="twitter:card" content="summary"&gt;
+  &lt;meta name="twitter:site" content=""&gt;
+  &lt;meta name="twitter:title" content=""&gt;
+  &lt;meta name="twitter:description" content=""&gt;
+  &lt;meta name="twitter:image" content=""&gt;
+  
+  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
+  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
+  
+  &lt;!-- Google Fonts --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
+  
+  &lt;!-- Bootstrap CSS File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Libraries CSS Files --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Main Stylesheet File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
+  
+&lt;!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= --&gt;
+&lt;/head&gt;
 
-C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:360
-C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php:81
+&lt;body&gt;
+  &lt;div id="preloader"&gt;&lt;/div&gt;
+  
+&lt;!--==========================
+  Hero Section
+============================--&gt;
+  &lt;section id="hero"&gt;
+    &lt;div class="hero-container"&gt;
+      &lt;div class="wow fadeIn"&gt;
+        &lt;div class="hero-logo"&gt;
+          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
+        &lt;/div&gt;
+        
+        &lt;h1&gt;Welcome to Tekumamba,  ! &lt;/h1&gt;
+        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
+        &lt;div class="actions"&gt;
+          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
+          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+&lt;!--==========================
+  Header Section
+============================--&gt;
+  &lt;header id="header"&gt;
+    &lt;div class="container"&gt;
+    
+      &lt;div id="logo" class="pull-left"&gt;
+        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
+        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
+        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
+      &lt;/div&gt;
+        
+      &lt;nav id="nav-menu-container"&gt;
+        &lt;ul class="nav-menu"&gt;
+          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt; --&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+
+        &lt;/ul&gt;
+      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;&lt;!-- #header --&gt;
+    
+&lt;!--==========================
+  About Section
+============================--&gt;
+  &lt;section id="about"&gt;
+    &lt;div class="container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-12"&gt;
+          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
+          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
+          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="container about-container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
+          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
+          &lt;p class="about-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+
+  
+&lt;!--==========================
+  Footer
+============================--&gt; 
+  &lt;footer id="footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;div class="copyright"&gt;
+              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
+            &lt;/div&gt;
+            &lt;div class="credits"&gt;
+              &lt;!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              --&gt;
+              Special thanks to BootstrapMade&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/footer&gt;&lt;!-- #footer --&gt;
+  
+  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
+    
+  &lt;!-- Required JavaScript Libraries --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Template Specisifc Custom Javascript File --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
+  
+    
+&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;".
+
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:36
+</failure>
+      </testcase>
+      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="39" assertions="2" time="0.065079">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_view_profile
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
+  &lt;meta content="" name="keywords"&gt;
+  &lt;meta content="" name="description"&gt;
+    
+  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
+  &lt;meta property="og:title" content=""&gt;
+  &lt;meta property="og:image" content=""&gt;
+  &lt;meta property="og:url" content=""&gt;
+  &lt;meta property="og:site_name" content=""&gt;
+  &lt;meta property="og:description" content=""&gt;
+  
+  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
+  &lt;meta name="twitter:card" content="summary"&gt;
+  &lt;meta name="twitter:site" content=""&gt;
+  &lt;meta name="twitter:title" content=""&gt;
+  &lt;meta name="twitter:description" content=""&gt;
+  &lt;meta name="twitter:image" content=""&gt;
+  
+  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
+  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
+  
+  &lt;!-- Google Fonts --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
+  
+  &lt;!-- Bootstrap CSS File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Libraries CSS Files --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Main Stylesheet File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
+  
+&lt;!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id="preloader"&gt;&lt;/div&gt;
+  
+&lt;!--==========================
+  Hero Section
+============================--&gt;
+  &lt;section id="hero"&gt;
+    &lt;div class="hero-container"&gt;
+      &lt;div class="wow fadeIn"&gt;
+        &lt;div class="hero-logo"&gt;
+          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
+        &lt;/div&gt;
+        
+        &lt;h1&gt;Welcome to Tekumamba, cicici ! &lt;/h1&gt;
+        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
+        &lt;div class="actions"&gt;
+          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
+          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+&lt;!--==========================
+  Header Section
+============================--&gt;
+  &lt;header id="header"&gt;
+    &lt;div class="container"&gt;
+    
+      &lt;div id="logo" class="pull-left"&gt;
+        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
+        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
+        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
+      &lt;/div&gt;
+        
+      &lt;nav id="nav-menu-container"&gt;
+        &lt;ul class="nav-menu"&gt;
+          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt; --&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+
+        &lt;/ul&gt;
+      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;&lt;!-- #header --&gt;\
+
+&lt;!--==========================
+  Contact Section
+============================--&gt; 
+  &lt;section id="contact"&gt;
+    &lt;div class="container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-12"&gt;
+          &lt;h3 class="section-title"&gt;Profile&lt;/h3&gt;
+          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
+   &lt;!--       &lt;p class="section-description"&gt;Your Photo is available &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    
+
+  &lt;div class="wrap"&gt;
+     &lt;div class="main"&gt;
+      &lt;div class="content"&gt;
+         &lt;div class="section group"&gt;
+        &lt;div class="col span_2_of_3"&gt;
+          &lt;div class="contact-form"&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;                   
+      &lt;/div&gt;
+     &lt;/div&gt; 
+    &lt;/div&gt;  
+
+
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-3 col-md-push-2"&gt;
+          &lt;div class="info"&gt;
+            &lt;form action="http://localhost/tekumamba/index.php/Home/updatePhoto/" enctype="multipart/form-data" method="post" accept-charset="utf-8"&gt;
+              &lt;form method="post" &gt;
+                &lt;div&gt;
+                &lt;span&gt;&lt;label for="userfile"&gt;Photo&lt;/label&gt;&lt;/span&gt;
+                &lt;img src="http://localhost/tekumamba/./images/Capture1.PNG" width="100%" height="100%"&gt;
+                &lt;span&gt;&lt;input type="file" name="userfile" size="20" class="button"/&gt;&lt;/span&gt;
+                &lt;input type="hidden" name="is_submit" value="1" /&gt;
+              &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;span&gt;&lt;input type="submit" value="Update"&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;/form&gt;
+          &lt;/form&gt;          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="col-md-5 col-md-push-2"&gt;
+          &lt;div class="form"&gt;
+            &lt;div id="errormessage"&gt;&lt;/div&gt;
+            &lt;form action="http://localhost/tekumamba/index.php/Home/updateProfile/" enctype="multipart/form-data" method="post" accept-charset="utf-8"&gt;
+            &lt;form method="post"&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;input type="text" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="0"/&gt;
+                  &lt;div class="validation"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="cicici" /&gt;
+                  &lt;div class="validation"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;input type="email" class="form-control" name="Uemail" id="Uemail" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" value="cicici@cicici.com"/&gt;
+                  &lt;div class="validation"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;input type="text" class="form-control" name="Uphone" id="Uphone" placeholder="Nomor Handphone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value="023754234" /&gt;
+                  &lt;div class="validation"&gt; &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;textarea class="form-control" name="Uaddress" id="Uaddress" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Alamat" value=""&gt;&lt;/textarea&gt;
+                  &lt;div class="validation"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+                &lt;div class="text-center"&gt;&lt;button type="submit" value="Update"&gt;Update&lt;/button&gt;&lt;/div&gt;
+            &lt;/form&gt;
+            &lt;/form&gt;          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+
+
+  &lt;!--==========================
+  Footer
+============================--&gt; 
+  &lt;footer id="footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;div class="copyright"&gt;
+              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
+            &lt;/div&gt;
+            &lt;div class="credits"&gt;
+              &lt;!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              --&gt;
+              Special thanks to BootstrapMade&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/footer&gt;&lt;!-- #footer --&gt;
+  
+  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
+    
+  &lt;!-- Required JavaScript Libraries --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Template Specisifc Custom Javascript File --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
+  
+    
+&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="cicici"&gt;".
+
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:44
+</failure>
+      </testcase>
+      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="47" assertions="1" time="0.084997">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_view_profile_nosession
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
+  &lt;meta content="" name="keywords"&gt;
+  &lt;meta content="" name="description"&gt;
+    
+  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
+  &lt;meta property="og:title" content=""&gt;
+  &lt;meta property="og:image" content=""&gt;
+  &lt;meta property="og:url" content=""&gt;
+  &lt;meta property="og:site_name" content=""&gt;
+  &lt;meta property="og:description" content=""&gt;
+  
+  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
+  &lt;meta name="twitter:card" content="summary"&gt;
+  &lt;meta name="twitter:site" content=""&gt;
+  &lt;meta name="twitter:title" content=""&gt;
+  &lt;meta name="twitter:description" content=""&gt;
+  &lt;meta name="twitter:image" content=""&gt;
+  
+  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
+  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
+  
+  &lt;!-- Google Fonts --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
+  
+  &lt;!-- Bootstrap CSS File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Libraries CSS Files --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
+  
+  &lt;!-- Main Stylesheet File --&gt;
+  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
+  
+&lt;!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id="preloader"&gt;&lt;/div&gt;
+  
+&lt;!--==========================
+  Hero Section
+============================--&gt;
+  &lt;section id="hero"&gt;
+    &lt;div class="hero-container"&gt;
+      &lt;div class="wow fadeIn"&gt;
+        &lt;div class="hero-logo"&gt;
+          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
+        &lt;/div&gt;
+        
+        &lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;
+        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
+        &lt;div class="actions"&gt;
+          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Login/Register&lt;/a&gt;
+          &lt;a href="#about" class="btn-services"&gt;About Tekumamba&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+&lt;!--==========================
+  Header Section
+============================--&gt;
+  &lt;header id="header"&gt;
+    &lt;div class="container"&gt;
+    
+      &lt;div id="logo" class="pull-left"&gt;
+        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
+        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
+        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
+      &lt;/div&gt;
+        
+      &lt;nav id="nav-menu-container"&gt;
+        &lt;ul class="nav-menu"&gt;
+          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt; --&gt;
+          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login"&gt;Login/Register&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;&lt;!-- #header --&gt;
+    
+&lt;!--==========================
+  About Section
+============================--&gt;
+  &lt;section id="about"&gt;
+    &lt;div class="container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-12"&gt;
+          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
+          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
+          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="container about-container wow fadeInUp"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
+          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
+          &lt;p class="about-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+          &lt;p class="about-text"&gt;
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+
+  
+&lt;!--==========================
+  Footer
+============================--&gt; 
+  &lt;footer id="footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;div class="copyright"&gt;
+              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
+            &lt;/div&gt;
+            &lt;div class="credits"&gt;
+              &lt;!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              --&gt;
+              Special thanks to BootstrapMade&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/footer&gt;&lt;!-- #footer --&gt;
+  
+  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
+    
+  &lt;!-- Required JavaScript Libraries --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Template Specisifc Custom Javascript File --&gt;
+  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
+  
+    
+&lt;/body&gt;
+&lt;/html&gt;' contains "".
+
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:51
 </failure>
       </testcase>
     </testsuite>
-    <testsuite name="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" fullPackage="Akun.model" tests="6" assertions="7" failures="0" errors="0" time="0.405748">
-      <testcase name="test_cek_akun_admin" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="11" assertions="1" time="0.053321"/>
-      <testcase name="test_akun" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="28" assertions="1" time="0.048598"/>
-      <testcase name="test_akun_notfound" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="43" assertions="1" time="0.100668"/>
-      <testcase name="test_penghuni_kos" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="49" assertions="1" time="0.045552"/>
-      <testcase name="test_semua_akun" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="63" assertions="2" time="0.103229"/>
-      <testcase name="test_cek_akun_not_found" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="81" assertions="1" time="0.054380"/>
+    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="7" assertions="18" failures="0" errors="0" time="0.619306">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.059198"/>
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="26" assertions="2" time="0.070476"/>
+      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="37" assertions="3" time="0.088285"/>
+      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="50" assertions="3" time="0.091123"/>
+      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="63" assertions="3" time="0.155140"/>
+      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="77" assertions="3" time="0.096715"/>
+      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="91" assertions="3" time="0.058369"/>
     </testsuite>
-    <testsuite name="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" fullPackage="Kos.model" tests="10" assertions="11" failures="4" errors="0" time="1.391418">
-      <testcase name="test_cari" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="12" assertions="1" time="0.094794">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_cari
-Failed asserting that 3 matches expected 2.
+    <testsuite name="Model_login_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php" fullPackage="Model.login" tests="1" assertions="0" failures="0" errors="1" time="0.034814">
+      <testcase name="test_cek_login" class="Model_login_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php" line="11" assertions="0" time="0.034814">
+        <error type="LogicException">Model_login_test::test_cek_login
+LogicException: No such property: db
 
-C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:14
-</failure>
-      </testcase>
-      <testcase name="test_harga" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="17" assertions="1" time="0.059316">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_harga
-Failed asserting that 6 matches expected 4.
-
-C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:19
-</failure>
-      </testcase>
-      <testcase name="test_kos" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="23" assertions="1" time="0.108133">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_kos
-Failed asserting that two objects are equal.
---- Expected
-+++ Actual
-@@ @@
-     'foto' =&gt; 'foto.jpg'
--    'fasilitas' =&gt; 'Kamar tidur 3x2.5, Kamar mandi luar, Dapur'
-+    'fasilitas' =&gt; 'Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkir'
-     'harga' =&gt; '500000'
- )
-
-C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:36
-</failure>
-      </testcase>
-      <testcase name="test_kos_fail" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="39" assertions="1" time="0.083106"/>
-      <testcase name="test_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="44" assertions="1" time="0.051116"/>
-      <testcase name="test_akun_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="49" assertions="1" time="0.082318"/>
-      <testcase name="test_cari_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="64" assertions="1" time="0.051933"/>
-      <testcase name="test_harga_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="69" assertions="1" time="0.072088"/>
-      <testcase name="test_kos_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="74" assertions="1" time="0.092336"/>
-      <testcase name="test_tambah_hapus_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="79" assertions="2" time="0.696278">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_tambah_hapus_penghuni
-Failed asserting that 3 matches expected 1.
-
-C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:88
-</failure>
+C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:52
+C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php:12
+</error>
       </testcase>
     </testsuite>
+    <testsuite name="Mymodel_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Mymodel_test.php" fullPackage="Mymodel" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
   </testsuite>
 </testsuites>
