@@ -1,807 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="13" assertions="24" failures="4" errors="1" time="1.004636">
-    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="5" assertions="6" failures="4" errors="0" time="0.350516">
-      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="18" assertions="1" time="0.072034"/>
-      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="25" assertions="1" time="0.064402">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_index_nosession
+  <testsuite name="CodeIgniter Application Test Suite" tests="15" assertions="25" failures="1" errors="0" time="1.341304">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="8" assertions="7" failures="1" errors="0" time="0.780512">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="18" assertions="1" time="0.076382"/>
+      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="25" assertions="1" time="0.065405"/>
+      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="32" assertions="1" time="0.063340"/>
+      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="39" assertions="1" time="0.067237"/>
+      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="47" assertions="1" time="0.063246"/>
+      <testcase name="test_view_profile_bisa" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="54" assertions="1" time="0.069870"/>
+      <testcase name="test_registerData" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="62" assertions="1" time="0.242767">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_registerData
 Failed asserting that '&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
-  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
-  &lt;meta content="" name="keywords"&gt;
-  &lt;meta content="" name="description"&gt;
-    
-  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
-  &lt;meta property="og:title" content=""&gt;
-  &lt;meta property="og:image" content=""&gt;
-  &lt;meta property="og:url" content=""&gt;
-  &lt;meta property="og:site_name" content=""&gt;
-  &lt;meta property="og:description" content=""&gt;
-  
-  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
-  &lt;meta name="twitter:card" content="summary"&gt;
-  &lt;meta name="twitter:site" content=""&gt;
-  &lt;meta name="twitter:title" content=""&gt;
-  &lt;meta name="twitter:description" content=""&gt;
-  &lt;meta name="twitter:image" content=""&gt;
-  
-  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
-  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
-  
-  &lt;!-- Google Fonts --&gt;
-  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
-  
-  &lt;!-- Bootstrap CSS File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Libraries CSS Files --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Main Stylesheet File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
-  
-&lt;!-- =======================================================
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;!-- This file has been downloaded from Bootsnipp.com. Enjoy! --&gt;
+    &lt;title&gt;Login &amp; Register&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;link rel="icon" href="http://localhost/tekumamba/assets/images/icon.png" type="image/png" sizes="16x16"&gt;
+    &lt;link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;style type="text/css"&gt;
+        body {
+    padding-top: 90px;
+}
+.panel-login {
+    border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login&gt;.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login&gt;.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login&gt;.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login&gt;.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
+    &lt;/style&gt;
+    &lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+    &lt;script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
-  &lt;div id="preloader"&gt;&lt;/div&gt;
-  
-&lt;!--==========================
-  Hero Section
-============================--&gt;
-  &lt;section id="hero"&gt;
-    &lt;div class="hero-container"&gt;
-      &lt;div class="wow fadeIn"&gt;
-        &lt;div class="hero-logo"&gt;
-          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
-        &lt;/div&gt;
-        
-        &lt;h1&gt;Welcome to Tekumamba,  ! &lt;/h1&gt;
-        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
-        &lt;div class="actions"&gt;
-          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
-          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-&lt;!--==========================
-  Header Section
-============================--&gt;
-  &lt;header id="header"&gt;
-    &lt;div class="container"&gt;
-    
-      &lt;div id="logo" class="pull-left"&gt;
-        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
-        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
-        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
-      &lt;/div&gt;
-        
-      &lt;nav id="nav-menu-container"&gt;
-        &lt;ul class="nav-menu"&gt;
-          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt; --&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
-
-        &lt;/ul&gt;
-      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;&lt;!-- #header --&gt;
-    
-&lt;!--==========================
-  About Section
-============================--&gt;
-  &lt;section id="about"&gt;
-    &lt;div class="container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-12"&gt;
-          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
-          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
-          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="container about-container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
-          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
-          &lt;p class="about-text"&gt;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-
-  
-&lt;!--==========================
-  Footer
-============================--&gt; 
-  &lt;footer id="footer"&gt;
-      &lt;div class="container"&gt;
+&lt;div class="container"&gt;
         &lt;div class="row"&gt;
-          &lt;div class="col-md-12"&gt;
-            &lt;div class="copyright"&gt;
-              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
-            &lt;/div&gt;
-            &lt;div class="credits"&gt;
-              &lt;!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
-              --&gt;
-              Special thanks to BootstrapMade&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-  &lt;/footer&gt;&lt;!-- #footer --&gt;
-  
-  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
-    
-  &lt;!-- Required JavaScript Libraries --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
-  
-  &lt;!-- Template Specisifc Custom Javascript File --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
-  
-  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
-  
-    
-&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;".
+			&lt;div class="col-md-6 col-md-offset-3"&gt;
+				&lt;div class="panel panel-login"&gt;
+					&lt;div class="panel-heading"&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-6"&gt;
+								&lt;a href="#" class="active" id="login-form-link"&gt;Login&lt;/a&gt;
+							&lt;/div&gt;
+							&lt;div class="col-xs-6"&gt;
+								&lt;a href="#" id="register-form-link"&gt;Register&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;hr&gt;
+					&lt;/div&gt;
+					&lt;div class="panel-body"&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-lg-12"&gt;
+								&lt;form id="login-form" action="http://localhost/tekumamba/index.php/Login/aksi_login" method="post" role="form" style="display: block;"&gt;
+									&lt;div class="form-group"&gt;
+										&lt;input type="text" name="Username" id="Username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off" required="required"&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;input type="password" name="Upassword" id="Upassword" tabindex="2" class="form-control" placeholder="Password" autocomplete="off" required="required"&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;label&gt;USERNAME / PASSWORD SALAH&lt;/label&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group text-center"&gt;
+										&lt;input type="checkbox" tabindex="3" class="" name="remember" id="remember" autocomplete="off"&gt;
+										&lt;label for="remember"&gt; Remember Me&lt;/label&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-sm-6 col-sm-offset-3"&gt;
+												&lt;input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In" autocomplete="off"&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/form&gt;
+								&lt;form id="register-form" action="http://localhost/tekumamba/index.php/Home/registerData" method="post" role="form" enctype="multipart/form-data" style="display: none;"&gt;
+					                  &lt;div class="form-group"&gt;
+					                    &lt;input type="text" name="Uname" id="Uname" tabindex="1" class="form-control" placeholder="Your Name" value="" autocomplete="off" required="required"&gt;
+					                  &lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;input type="text" name="Username" id="Username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off" required="required"&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;input type="email" name="Uemail" id="Uemail" tabindex="1" class="form-control" placeholder="Email Address" autocomplete="off" required="required"&gt;
+									&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;input type="password" name="Upassword" id="Upassword" tabindex="1" class="form-control" placeholder="Password" autocomplete="off" required="required"&gt;
+									
+									&lt;div class="form-group"&gt;
+										&lt;input type="number" name="Uphone" id="Uphone" tabindex="1" class="form-control" placeholder="No. Telepon" autocomplete="off" required="required"&gt;
+									&lt;/div&gt;
+										&lt;div&gt;
+											&lt;input type="file" name="Ufoto"&gt;
+										&lt;/div&gt;
+									&lt;div class="form-group"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-sm-6 col-sm-offset-3"&gt;
+												&lt;input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now"&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/form&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+$(function() {
 
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:29
+    $('#login-form-link').click(function(e) {
+    	$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+' contains "&lt;label&gt;REGISTER SUKSES&lt;/label&gt;".
+
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:78
 </failure>
       </testcase>
-      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="32" assertions="1" time="0.064004">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_index_namasessionsalah
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
-  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
-  &lt;meta content="" name="keywords"&gt;
-  &lt;meta content="" name="description"&gt;
-    
-  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
-  &lt;meta property="og:title" content=""&gt;
-  &lt;meta property="og:image" content=""&gt;
-  &lt;meta property="og:url" content=""&gt;
-  &lt;meta property="og:site_name" content=""&gt;
-  &lt;meta property="og:description" content=""&gt;
-  
-  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
-  &lt;meta name="twitter:card" content="summary"&gt;
-  &lt;meta name="twitter:site" content=""&gt;
-  &lt;meta name="twitter:title" content=""&gt;
-  &lt;meta name="twitter:description" content=""&gt;
-  &lt;meta name="twitter:image" content=""&gt;
-  
-  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
-  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
-  
-  &lt;!-- Google Fonts --&gt;
-  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
-  
-  &lt;!-- Bootstrap CSS File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Libraries CSS Files --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Main Stylesheet File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
-  
-&lt;!-- =======================================================
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= --&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div id="preloader"&gt;&lt;/div&gt;
-  
-&lt;!--==========================
-  Hero Section
-============================--&gt;
-  &lt;section id="hero"&gt;
-    &lt;div class="hero-container"&gt;
-      &lt;div class="wow fadeIn"&gt;
-        &lt;div class="hero-logo"&gt;
-          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
-        &lt;/div&gt;
-        
-        &lt;h1&gt;Welcome to Tekumamba,  ! &lt;/h1&gt;
-        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
-        &lt;div class="actions"&gt;
-          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
-          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-&lt;!--==========================
-  Header Section
-============================--&gt;
-  &lt;header id="header"&gt;
-    &lt;div class="container"&gt;
-    
-      &lt;div id="logo" class="pull-left"&gt;
-        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
-        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
-        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
-      &lt;/div&gt;
-        
-      &lt;nav id="nav-menu-container"&gt;
-        &lt;ul class="nav-menu"&gt;
-          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt; --&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
-
-        &lt;/ul&gt;
-      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;&lt;!-- #header --&gt;
-    
-&lt;!--==========================
-  About Section
-============================--&gt;
-  &lt;section id="about"&gt;
-    &lt;div class="container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-12"&gt;
-          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
-          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
-          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="container about-container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
-          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
-          &lt;p class="about-text"&gt;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-
-  
-&lt;!--==========================
-  Footer
-============================--&gt; 
-  &lt;footer id="footer"&gt;
-      &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-          &lt;div class="col-md-12"&gt;
-            &lt;div class="copyright"&gt;
-              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
-            &lt;/div&gt;
-            &lt;div class="credits"&gt;
-              &lt;!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
-              --&gt;
-              Special thanks to BootstrapMade&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-  &lt;/footer&gt;&lt;!-- #footer --&gt;
-  
-  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
-    
-  &lt;!-- Required JavaScript Libraries --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
-  
-  &lt;!-- Template Specisifc Custom Javascript File --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
-  
-  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
-  
-    
-&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;".
-
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:36
-</failure>
-      </testcase>
-      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="39" assertions="2" time="0.065079">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_view_profile
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
-  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
-  &lt;meta content="" name="keywords"&gt;
-  &lt;meta content="" name="description"&gt;
-    
-  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
-  &lt;meta property="og:title" content=""&gt;
-  &lt;meta property="og:image" content=""&gt;
-  &lt;meta property="og:url" content=""&gt;
-  &lt;meta property="og:site_name" content=""&gt;
-  &lt;meta property="og:description" content=""&gt;
-  
-  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
-  &lt;meta name="twitter:card" content="summary"&gt;
-  &lt;meta name="twitter:site" content=""&gt;
-  &lt;meta name="twitter:title" content=""&gt;
-  &lt;meta name="twitter:description" content=""&gt;
-  &lt;meta name="twitter:image" content=""&gt;
-  
-  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
-  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
-  
-  &lt;!-- Google Fonts --&gt;
-  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
-  
-  &lt;!-- Bootstrap CSS File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Libraries CSS Files --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Main Stylesheet File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
-  
-&lt;!-- =======================================================
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= --&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div id="preloader"&gt;&lt;/div&gt;
-  
-&lt;!--==========================
-  Hero Section
-============================--&gt;
-  &lt;section id="hero"&gt;
-    &lt;div class="hero-container"&gt;
-      &lt;div class="wow fadeIn"&gt;
-        &lt;div class="hero-logo"&gt;
-          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
-        &lt;/div&gt;
-        
-        &lt;h1&gt;Welcome to Tekumamba, cicici ! &lt;/h1&gt;
-        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
-        &lt;div class="actions"&gt;
-          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Nebengin&lt;/a&gt;
-          &lt;a href="#about" class="btn-services"&gt;Nebeng ah!&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-&lt;!--==========================
-  Header Section
-============================--&gt;
-  &lt;header id="header"&gt;
-    &lt;div class="container"&gt;
-    
-      &lt;div id="logo" class="pull-left"&gt;
-        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
-        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
-        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
-      &lt;/div&gt;
-        
-      &lt;nav id="nav-menu-container"&gt;
-        &lt;ul class="nav-menu"&gt;
-          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt; --&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Home/viewProfile"&gt;See Profile&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login/logout"&gt;Logout&lt;/a&gt;&lt;/li&gt;
-
-        &lt;/ul&gt;
-      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;&lt;!-- #header --&gt;\
-
-&lt;!--==========================
-  Contact Section
-============================--&gt; 
-  &lt;section id="contact"&gt;
-    &lt;div class="container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-12"&gt;
-          &lt;h3 class="section-title"&gt;Profile&lt;/h3&gt;
-          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
-   &lt;!--       &lt;p class="section-description"&gt;Your Photo is available &lt;/p&gt; --&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    
-
-  &lt;div class="wrap"&gt;
-     &lt;div class="main"&gt;
-      &lt;div class="content"&gt;
-         &lt;div class="section group"&gt;
-        &lt;div class="col span_2_of_3"&gt;
-          &lt;div class="contact-form"&gt;
-          &lt;/div&gt;
-          &lt;/div&gt;                   
-      &lt;/div&gt;
-     &lt;/div&gt; 
-    &lt;/div&gt;  
-
-
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-3 col-md-push-2"&gt;
-          &lt;div class="info"&gt;
-            &lt;form action="http://localhost/tekumamba/index.php/Home/updatePhoto/" enctype="multipart/form-data" method="post" accept-charset="utf-8"&gt;
-              &lt;form method="post" &gt;
-                &lt;div&gt;
-                &lt;span&gt;&lt;label for="userfile"&gt;Photo&lt;/label&gt;&lt;/span&gt;
-                &lt;img src="http://localhost/tekumamba/./images/Capture1.PNG" width="100%" height="100%"&gt;
-                &lt;span&gt;&lt;input type="file" name="userfile" size="20" class="button"/&gt;&lt;/span&gt;
-                &lt;input type="hidden" name="is_submit" value="1" /&gt;
-              &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;span&gt;&lt;input type="submit" value="Update"&gt;&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;/form&gt;
-          &lt;/form&gt;          &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;div class="col-md-5 col-md-push-2"&gt;
-          &lt;div class="form"&gt;
-            &lt;div id="errormessage"&gt;&lt;/div&gt;
-            &lt;form action="http://localhost/tekumamba/index.php/Home/updateProfile/" enctype="multipart/form-data" method="post" accept-charset="utf-8"&gt;
-            &lt;form method="post"&gt;
-                &lt;div class="form-group"&gt;
-                  &lt;input type="text" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="0"/&gt;
-                  &lt;div class="validation"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                  &lt;input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="cicici" /&gt;
-                  &lt;div class="validation"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                  &lt;input type="email" class="form-control" name="Uemail" id="Uemail" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" value="cicici@cicici.com"/&gt;
-                  &lt;div class="validation"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                  &lt;input type="text" class="form-control" name="Uphone" id="Uphone" placeholder="Nomor Handphone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value="023754234" /&gt;
-                  &lt;div class="validation"&gt; &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                  &lt;textarea class="form-control" name="Uaddress" id="Uaddress" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Alamat" value=""&gt;&lt;/textarea&gt;
-                  &lt;div class="validation"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-                &lt;div class="text-center"&gt;&lt;button type="submit" value="Update"&gt;Update&lt;/button&gt;&lt;/div&gt;
-            &lt;/form&gt;
-            &lt;/form&gt;          &lt;/div&gt;
-        &lt;/div&gt;
-        
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-
-
-  &lt;!--==========================
-  Footer
-============================--&gt; 
-  &lt;footer id="footer"&gt;
-      &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-          &lt;div class="col-md-12"&gt;
-            &lt;div class="copyright"&gt;
-              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
-            &lt;/div&gt;
-            &lt;div class="credits"&gt;
-              &lt;!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
-              --&gt;
-              Special thanks to BootstrapMade&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-  &lt;/footer&gt;&lt;!-- #footer --&gt;
-  
-  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
-    
-  &lt;!-- Required JavaScript Libraries --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
-  
-  &lt;!-- Template Specisifc Custom Javascript File --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
-  
-  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
-  
-    
-&lt;/body&gt;
-&lt;/html&gt;' contains "&lt;input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="cicici"&gt;".
-
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:44
-</failure>
-      </testcase>
-      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="47" assertions="1" time="0.084997">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_view_profile_nosession
-Failed asserting that '&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;Imperial Boootstrap Template&lt;/title&gt;
-  &lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;
-  &lt;meta content="" name="keywords"&gt;
-  &lt;meta content="" name="description"&gt;
-    
-  &lt;!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph --&gt;
-  &lt;meta property="og:title" content=""&gt;
-  &lt;meta property="og:image" content=""&gt;
-  &lt;meta property="og:url" content=""&gt;
-  &lt;meta property="og:site_name" content=""&gt;
-  &lt;meta property="og:description" content=""&gt;
-  
-  &lt;!-- Twitter Cards integration: https://dev.twitter.com/cards/  --&gt;
-  &lt;meta name="twitter:card" content="summary"&gt;
-  &lt;meta name="twitter:site" content=""&gt;
-  &lt;meta name="twitter:title" content=""&gt;
-  &lt;meta name="twitter:description" content=""&gt;
-  &lt;meta name="twitter:image" content=""&gt;
-  
-  &lt;!-- Place your favicon.ico and apple-touch-icon.png in the template root directory --&gt;
-  &lt;link href="favicon.ico" rel="shortcut icon"&gt;
-  
-  &lt;!-- Google Fonts --&gt;
-  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"&gt; 
-  
-  &lt;!-- Bootstrap CSS File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Libraries CSS Files --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/lib/animate-css/animate.min.css" rel="stylesheet"&gt;
-  
-  &lt;!-- Main Stylesheet File --&gt;
-  &lt;link href="http://localhost/tekumamba/assets/imperial/css/style.css" rel="stylesheet"&gt;
-  
-&lt;!-- =======================================================
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= --&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div id="preloader"&gt;&lt;/div&gt;
-  
-&lt;!--==========================
-  Hero Section
-============================--&gt;
-  &lt;section id="hero"&gt;
-    &lt;div class="hero-container"&gt;
-      &lt;div class="wow fadeIn"&gt;
-        &lt;div class="hero-logo"&gt;
-          &lt;img class="" src="http://localhost/tekumamba/assets/imperial/img/Biker.png"alt="Tekumamba"&gt;
-        &lt;/div&gt;
-        
-        &lt;h1&gt;Welcome to Tekumamba&lt;/h1&gt;
-        &lt;h2&gt;Yuk mas mbak! &lt;span class="rotating"&gt;tebeng, nebeng, dengan mudah!&lt;/span&gt;&lt;/h2&gt;
-        &lt;div class="actions"&gt;
-          &lt;a href="http://localhost/tekumamba/index.php/Login" class="btn-get-started"&gt;Login/Register&lt;/a&gt;
-          &lt;a href="#about" class="btn-services"&gt;About Tekumamba&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-&lt;!--==========================
-  Header Section
-============================--&gt;
-  &lt;header id="header"&gt;
-    &lt;div class="container"&gt;
-    
-      &lt;div id="logo" class="pull-left"&gt;
-        &lt;a href="#hero"&gt;&lt;img src="http://localhost/tekumamba/assets/imperial/img/logo.png alt="" title="" /&gt;&lt;/img&gt;&lt;/a&gt;
-        &lt;!-- Uncomment below if you prefer to use a text image --&gt;
-        &lt;!--&lt;h1&gt;&lt;a href="#hero"&gt;Header 1&lt;/a&gt;&lt;/h1&gt;--&gt;
-      &lt;/div&gt;
-        
-      &lt;nav id="nav-menu-container"&gt;
-        &lt;ul class="nav-menu"&gt;
-          &lt;li class="menu-active"&gt;&lt;a href="#hero"&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#about"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-    &lt;!--      &lt;li class="menu-has-children"&gt;&lt;a href=""&gt;Drop Down&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Lihat Profil&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#"&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt; --&gt;
-          &lt;li&gt;&lt;a href="http://localhost/tekumamba/index.php/Login"&gt;Login/Register&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;&lt;!-- #nav-menu-container --&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;&lt;!-- #header --&gt;
-    
-&lt;!--==========================
-  About Section
-============================--&gt;
-  &lt;section id="about"&gt;
-    &lt;div class="container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-12"&gt;
-          &lt;h3 class="section-title"&gt;About Us&lt;/h3&gt;
-          &lt;div class="section-title-divider"&gt;&lt;/div&gt;
-          &lt;p class="section-description"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="container about-container wow fadeInUp"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-md-6 col-md-push-6 about-content"&gt;
-          &lt;h2 class="about-title"&gt;We provide great services and ideass&lt;/h2&gt;
-          &lt;p class="about-text"&gt;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-          &lt;p class="about-text"&gt;
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-
-  
-&lt;!--==========================
-  Footer
-============================--&gt; 
-  &lt;footer id="footer"&gt;
-      &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-          &lt;div class="col-md-12"&gt;
-            &lt;div class="copyright"&gt;
-              &amp;copy; Copyright &lt;strong&gt;Tekumamba 2017&lt;/strong&gt;. All Rights Reserved
-            &lt;/div&gt;
-            &lt;div class="credits"&gt;
-              &lt;!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
-              --&gt;
-              Special thanks to BootstrapMade&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-  &lt;/footer&gt;&lt;!-- #footer --&gt;
-  
-  &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;
-    
-  &lt;!-- Required JavaScript Libraries --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/jquery/jquery.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/hoverIntent.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/superfish/superfish.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/morphext/morphext.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/wow/wow.min.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/stickyjs/sticky.js"&gt;&lt;/script&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/lib/easing/easing.js"&gt;&lt;/script&gt;
-  
-  &lt;!-- Template Specisifc Custom Javascript File --&gt;
-  &lt;script src="http://localhost/tekumamba/assets/imperial/js/custom.js"&gt;&lt;/script&gt;
-  
-  &lt;script src="http://localhost/tekumamba/assets/imperial/contactform/contactform.js"&gt;&lt;/script&gt;
-  
-    
-&lt;/body&gt;
-&lt;/html&gt;' contains "".
-
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:51
-</failure>
-      </testcase>
+      <testcase name="test_updatePhoto" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="81" assertions="0" time="0.132265"/>
     </testsuite>
-    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="7" assertions="18" failures="0" errors="0" time="0.619306">
-      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.059198"/>
-      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="26" assertions="2" time="0.070476"/>
-      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="37" assertions="3" time="0.088285"/>
-      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="50" assertions="3" time="0.091123"/>
-      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="63" assertions="3" time="0.155140"/>
-      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="77" assertions="3" time="0.096715"/>
-      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="91" assertions="3" time="0.058369"/>
+    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="7" assertions="18" failures="0" errors="0" time="0.560792">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.057191"/>
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="26" assertions="2" time="0.068725"/>
+      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="37" assertions="3" time="0.090035"/>
+      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="50" assertions="3" time="0.090590"/>
+      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="63" assertions="3" time="0.095515"/>
+      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="77" assertions="3" time="0.099320"/>
+      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="91" assertions="3" time="0.059416"/>
     </testsuite>
-    <testsuite name="Model_login_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php" fullPackage="Model.login" tests="1" assertions="0" failures="0" errors="1" time="0.034814">
-      <testcase name="test_cek_login" class="Model_login_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php" line="11" assertions="0" time="0.034814">
-        <error type="LogicException">Model_login_test::test_cek_login
-LogicException: No such property: db
-
-C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:52
-C:\xampp\htdocs\tekumamba\application\tests\models\Model_login_test.php:12
-</error>
-      </testcase>
-    </testsuite>
-    <testsuite name="Mymodel_test" file="C:\xampp\htdocs\tekumamba\application\tests\models\Mymodel_test.php" fullPackage="Mymodel" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
   </testsuite>
 </testsuites>

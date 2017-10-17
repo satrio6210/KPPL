@@ -93,7 +93,7 @@ class Login_test extends TestCase
         $_SESSION['status'] = "login";
         $this->assertTrue( isset($_SESSION['nama']) );
         $this->request('GET', 'Login/logout');
-        $this->assertRedirect('');
+        $this->assertRedirect('index.php/Home');
         $this->assertFalse( isset($_SESSION['nama']));
     }
     

@@ -5,12 +5,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/tekumamba/application/tests/controllers/Login_test.php</file>
-            <file>file:/C:/xampp/htdocs/tekumamba/application/tests/models/Mymodel_test.php</file>
-            <file>file:/C:/xampp/htdocs/tekumamba/application/tests/models/Model_login_test.php</file>
-            <file>file:/C:/xampp/htdocs/tekumamba/application/controllers/Login.php</file>
             <file>file:/C:/xampp/htdocs/tekumamba/application/tests/controllers/Home_test.php</file>
             <file>file:/C:/xampp/htdocs/tekumamba/application/models/Mymodel.php</file>
-            <file>file:/C:/xampp/htdocs/tekumamba/application/models/Model_login.php</file>
+            <file>file:/C:/xampp/htdocs/tekumamba/application/views/viewLogin.php</file>
             <file>file:/C:/xampp/htdocs/tekumamba/application/controllers/Home.php</file>
         </group>
     </open-files>
