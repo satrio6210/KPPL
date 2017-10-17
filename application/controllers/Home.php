@@ -10,11 +10,13 @@ class Home extends CI_Controller {
  	}
 
  	public function index() {
-		if($this->session->userdata('status'!='login'))
+		
+        if($this->session->userdata('status')!='login')
                     {$this->load->view('viewHome');
 		}else
                     {$this->load->view('viewHomeUser');
 		}
+        //$this->load->view('viewHome');
 	}
 	
 

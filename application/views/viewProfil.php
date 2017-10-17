@@ -147,7 +147,8 @@
         <div class="col-md-5 col-md-push-2">
           <div class="form">
             <div id="errormessage"></div>
-            <?php echo form_open_multipart('index.php/Home/updateProfile/'); ?>
+            <!--<?php echo form_open_multipart('index.php/Home/updateProfile/'); ?>-->
+            <?php echo form_open_multipart('index.php/Home/viewProfile/'); ?>
             <form method="post">
                 <div class="form-group">
                   <input type="text" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="<?php echo $Uktp; ?>"/>
