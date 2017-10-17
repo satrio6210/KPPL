@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="51" assertions="68" failures="10" errors="0" time="11.962298">
+    <testsuite name="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" fullPackage="Akun" tests="19" assertions="30" failures="2" errors="0" time="7.533981">
+      <testcase name="test_index_login_pencari" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="18" assertions="1" time="1.001926"/>
+      <testcase name="test_index_login_pemilik" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="27" assertions="1" time="0.162416"/>
+      <testcase name="test_index_login_admin" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="35" assertions="1" time="0.081655"/>
+      <testcase name="test_index_not_login" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="43" assertions="1" time="0.093081"/>
+      <testcase name="test_profil" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="49" assertions="2" time="0.774363">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Akun_test::test_profil
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
+&lt;meta name="author" content="FindingKost" /&gt;
+&lt;title&gt;FindingKos | Dewangga Prasetya Praja&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;nav class="indigo darken-4"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="nav-wrapper"&gt;
+            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
+        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
+            Finding&lt;strong&gt;Kost&lt;/strong&gt;
+        &lt;/a&gt;
+        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
+            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;ul class="side-nav" id="mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;
+    &lt;div class="col s12"&gt;
+        &lt;ul class="collection"&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
+                &lt;span class="title"&gt;Nama&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;h4&gt;Dewangga Prasetya Praja&lt;/h4&gt;
+                &lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
+                &lt;span class="title"&gt;Alamat&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;123123123123&lt;/strong&gt;
+                &lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
+                &lt;span class="title"&gt;Telepon&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;em&gt;2147483647&lt;/em&gt;
+                &lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;email&lt;/i&gt;
+                &lt;span class="title"&gt;Email&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;b&gt;
+                        &lt;a href="mailto:dewzzpro@gmail.com"&gt;dewzzpro@gmail.com&lt;/a&gt;
+                    &lt;/b&gt;
+                &lt;/p&gt;
+                &lt;a href="mailto:dewzzpro@gmail.com" class="secondary-content"&gt;
+                    &lt;i class="material-icons"&gt;markunread_mailbox&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(".button-collapse").sideNav();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;em&gt;08562747444&lt;/em&gt;".
+
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php:53
+</failure>
+      </testcase>
+      <testcase name="test_profil_pencari" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="56" assertions="1" time="0.078232"/>
+      <testcase name="test_profil_pemilik" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="64" assertions="1" time="0.117421"/>
+      <testcase name="test_submit_masuk_nopassword" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="72" assertions="2" time="0.159869"/>
+      <testcase name="test_submit_masuk_nousername" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="82" assertions="2" time="0.596723"/>
+      <testcase name="test_submit_masuk_unmatch" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="92" assertions="2" time="0.095844"/>
+      <testcase name="test_submit_masuk" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="102" assertions="3" time="2.327144"/>
+      <testcase name="test_keluar" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="113" assertions="3" time="0.161782"/>
+      <testcase name="test_keluar_" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="122" assertions="3" time="0.082024"/>
+      <testcase name="test_masuk" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="129" assertions="2" time="0.220291"/>
+      <testcase name="test_profil_404" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="135" assertions="1" time="0.095914"/>
+      <testcase name="test_profil_no_param" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="142" assertions="1" time="0.109293"/>
+      <testcase name="test_method_404" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="148" assertions="1" time="0.133441"/>
+      <testcase name="test_APPPATH" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="154" assertions="1" time="0.041058"/>
+      <testcase name="test_daftar_keluar_" class="Akun_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php" line="165" assertions="1" time="1.201504">
+        <failure type="PHPUnit_Framework_AssertionFailedError">Akun_test::test_daftar_keluar_
+redirect() is not called.
+
+C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:360
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Akun_test.php:175
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" fullPackage="Kos" tests="9" assertions="12" failures="2" errors="0" time="1.651103">
+      <testcase name="test_index" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="18" assertions="1" time="0.817417"/>
+      <testcase name="test_cari" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="24" assertions="1" time="0.096591">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_test::test_cari
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
+&lt;meta name="author" content="FindingKost" /&gt;
+&lt;title&gt;FindingKost | Kos&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class="indigo darken-4"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="nav-wrapper"&gt;
+            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
+        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
+            Finding&lt;strong&gt;Kost&lt;/strong&gt;
+        &lt;/a&gt;
+        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
+            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;ul class="side-nav" id="mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;div class="container"&gt;
+    &lt;!-- Search Bar --&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="input-field col s12 m6"&gt;
+    &lt;i class="material-icons prefix"&gt;location_on&lt;/i&gt;
+        &lt;input type="text" id="autocomplete-input" class="autocomplete"&gt;
+    &lt;label for="autocomplete-input"&gt;Lokasi Daerah&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="input-field col s12 m6"&gt;
+    &lt;select multiple&gt;
+        &lt;option value="" disabled selected&gt;Choose your option&lt;/option&gt;
+        &lt;option value="1"&gt;Option 1&lt;/option&gt;
+        &lt;option value="2"&gt;Option 2&lt;/option&gt;
+        &lt;option value="3"&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;label&gt;Materialize Multiple Select&lt;/label&gt;
+&lt;/div&gt;    &lt;/div&gt;
+    &lt;!-- Pagination --&gt;
+    &lt;div class="row text-center"&gt;
+        &lt;div class="col s12"&gt;
+            &lt;ul class="pagination "&gt;
+                &lt;div class="center-align"&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="prev"&gt;&lt;i class="material-icons"&gt;chevron_left&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="start"&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class="active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Kos --&gt;
+    &lt;div class="row"&gt;
+        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" class="materialboxed" alt="2" /&gt;
+            &lt;span class="card-title"&gt;2&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/1"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/foto.jpg" class="materialboxed" alt="5" /&gt;
+            &lt;span class="card-title"&gt;5&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;Mulyosari Utara VII Mulyosari Surabaya&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkir&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/2"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/rungkut.jpg" class="materialboxed" alt="7" /&gt;
+            &lt;span class="card-title"&gt;7&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;rungkut menanggal harapan s-11&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Tempat Parkir &lt;br&gt;AC&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 600.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/3"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/kedung.jpg" class="materialboxed" alt="8" /&gt;
+            &lt;span class="card-title"&gt;8&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;jalan kedung klinter 5/4 surabaya&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Tempat Parkir&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 550.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/4"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/ketintang.jpg" class="materialboxed" alt="9" /&gt;
+            &lt;span class="card-title"&gt;9&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;ketandan kidul VI, Surabaya&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkiran &lt;br&gt;Dapur &lt;br&gt;AC&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 550.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/5"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+        &lt;div class="col s12 m6 l4"&gt;
+    &lt;div class="card large"&gt;
+        &lt;div class="card-image"&gt;
+            &lt;image src="http://localhost/C:\xampp\php\phpunit/assets/images/bubutan.jpg" class="materialboxed" alt="10" /&gt;
+            &lt;span class="card-title"&gt;10&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-content"&gt;
+            &lt;p&gt;&lt;strong&gt;jalan bubutan V/15-17, Surabaya&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkiran &lt;br&gt;Dapur &lt;br&gt;AC&lt;/p&gt;
+            &lt;h5 class="right-align"&gt;Rp 500.000&lt;/h5&gt;&lt;h6 class="right-align"&gt;/bulan&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;div class="card-action"&gt;
+            &lt;a class="waves-effect waves-light" href="http://localhost/C:\xampp\php\phpunit/kos/detail/6"&gt;Lihat selengkapnya&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
+    &lt;/div&gt;
+    &lt;!-- Pagination --&gt;
+    &lt;div class="row text-center"&gt;
+        &lt;div class="col s12"&gt;
+            &lt;ul class="pagination "&gt;
+                &lt;div class="center-align"&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="prev"&gt;&lt;i class="material-icons"&gt;chevron_left&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="waves-effect"&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari" data-ci-pagination-page="1" rel="start"&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class="active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(".button-collapse").sideNav();
+&lt;/script&gt;    &lt;script&gt;
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'http://placehold.it/250x250'
+      }
+    });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
+
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php:27
+</failure>
+      </testcase>
+      <testcase name="test_detail" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="30" assertions="4" time="0.300987">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_test::test_detail
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
+&lt;meta name="author" content="FindingKost" /&gt;
+&lt;title&gt;FindingKost | Redian Galih Irianti&lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;nav class="indigo darken-4"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="nav-wrapper"&gt;
+            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
+        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
+            Finding&lt;strong&gt;Kost&lt;/strong&gt;
+        &lt;/a&gt;
+        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
+            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;ul class="side-nav" id="mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt;CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#login"&gt;&lt;i class="material-icons right"&gt;play_for_work&lt;/i&gt;MASUK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun#signup"&gt;&lt;i class="material-icons right"&gt;new_releases&lt;/i&gt;DAFTAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;
+    &lt;div class="col s12 m6 l5"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-image waves-effect waves-block waves-light"&gt;
+                &lt;img class="activator" src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" alt="FindingKost" /&gt;
+            &lt;/div&gt;
+            &lt;div class="card-content"&gt;
+                &lt;span class="card-title activator grey-text text-darken-4"&gt;
+                    LIHAT &lt;b&gt;FASILITAS&lt;/b&gt; !
+                    &lt;i class="material-icons right"&gt;more_vert&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;p&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/masuk"&gt;Masuk&lt;/a&gt; terlebih dahulu, untuk daftar kos &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="card-reveal"&gt;
+                &lt;span class="card-title grey-text text-darken-4"&gt;
+                    Fasilitas&lt;i class="material-icons right"&gt;close&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s12 m6 l7"&gt;
+        &lt;ul class="collection"&gt;
+            &lt;a href="http://localhost/C:\xampp\php\phpunit/akun/profil/rediangalih"&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
+                &lt;span class="title"&gt;Nama Pemilik&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;h4&gt;Redian Galih Irianti&lt;/h4&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/a&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
+                &lt;span class="title"&gt;Alamat&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
+                &lt;span class="title"&gt;Telepon&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;em&gt;81675438&lt;/em&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;payment&lt;/i&gt;
+                &lt;span class="title"&gt;Harga&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;mark&gt;&lt;b&gt;Rp 500.000,00 / bulan-&lt;/b&gt;&lt;/mark&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(".button-collapse").sideNav();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
+
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php:36
+</failure>
+      </testcase>
+      <testcase name="test_detail_notlogin" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="39" assertions="1" time="0.068874"/>
+      <testcase name="test_detail_login_pencari" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="45" assertions="1" time="0.084098"/>
+      <testcase name="test_detail_login_penghuni" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="54" assertions="1" time="0.095960"/>
+      <testcase name="test_method_404" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="63" assertions="1" time="0.057584"/>
+      <testcase name="test_detail_404" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="68" assertions="1" time="0.104003"/>
+      <testcase name="test_APPPATH" class="Kos_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Kos_test.php" line="74" assertions="1" time="0.025589"/>
+    </testsuite>
+    <testsuite name="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" fullPackage="Pencari" tests="7" assertions="8" failures="2" errors="0" time="0.980048">
+      <testcase name="test_index_login_pencari" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="18" assertions="1" time="0.135397"/>
+      <testcase name="test_index_login_pemilik" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="27" assertions="1" time="0.068674"/>
+      <testcase name="test_index_login_admin" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="35" assertions="1" time="0.065310"/>
+      <testcase name="test_index_not_login" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="43" assertions="1" time="0.067306"/>
+      <testcase name="test_mykos_terdaftar" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="49" assertions="2" time="0.194241">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Pencari_test::test_mykos_terdaftar
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;meta name="description" content="Penghubung Antara Pemilik Kos Dengan Pencari Kos" /&gt;
+&lt;meta name="author" content="FindingKost" /&gt;
+&lt;title&gt;FindingKost | &lt;/title&gt;&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" rel="icon" width="100px" type="image/gif" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /&gt;
+&lt;link href="http://localhost/C:\xampp\php\phpunit/assets/css/style.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="indigo darken-4"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="nav-wrapper"&gt;
+            &lt;image width="37px" style="margin: 10px" src="http://localhost/C:\xampp\php\phpunit/assets/images/favicon.gif" /&gt;
+        &lt;a href="http://localhost/C:\xampp\php\phpunit/" class="brand-logo" &gt;
+            Finding&lt;strong&gt;Kost&lt;/strong&gt;
+        &lt;/a&gt;
+        &lt;a href="#" data-activates="mobile" class="button-collapse"&gt;
+            &lt;i class="material-icons"&gt;menu&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul class="right hide-on-med-and-down" id="nav-mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt; CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun"&gt;&lt;i class="material-icons right"&gt;person_pin&lt;/i&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/keluar"&gt;&lt;i class="material-icons right"&gt;power_settings_new&lt;/i&gt; KELUAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;ul class="side-nav" id="mobile"&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/kos/cari"&gt;&lt;i class="material-icons right"&gt;search&lt;/i&gt; CARI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun"&gt;&lt;i class="material-icons right"&gt;person_pin&lt;/i&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://localhost/C:\xampp\php\phpunit/akun/keluar"&gt;&lt;i class="material-icons right"&gt;power_settings_new&lt;/i&gt; KELUAR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;    &lt;div class="row"&gt;
+    &lt;div class="col s12 m6 l6"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-image waves-effect waves-block waves-light"&gt;
+                &lt;img class="activator" src="http://localhost/C:\xampp\php\phpunit/assets/images/coba.jpg" alt="FindingKost" /&gt;
+            &lt;/div&gt;
+            &lt;div class="card-content"&gt;
+                &lt;span class="card-title activator grey-text text-darken-4"&gt;
+                    FASILITAS
+                    &lt;i class="material-icons right"&gt;more_vert&lt;/i&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="card-reveal"&gt;
+                &lt;span class="card-title grey-text text-darken-4"&gt;
+                    Fasilitas&lt;i class="material-icons right"&gt;close&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;p&gt;Kamar Tidur &lt;br&gt;Kamar mandi &lt;br&gt;Dapur &lt;br&gt;Parkir&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col s12 m6 l6"&gt;
+        &lt;ul class="collection"&gt;
+            &lt;a href="http://localhost/C:\xampp\php\phpunit/akun/profil/rediangalih"&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;perm_contact_calendar&lt;/i&gt;
+                &lt;span class="title"&gt;Nama Pemilik&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;h4&gt;Redian Galih Irianti&lt;/h4&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/a&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle red"&gt;room&lt;/i&gt;
+                &lt;span class="title"&gt;Alamat&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;Jalan Tegal Mulyorejo Baru 114 Mulyosari, Surabaya&lt;/strong&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle green"&gt;call&lt;/i&gt;
+                &lt;span class="title"&gt;Telepon&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;em&gt;81675438&lt;/em&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="collection-item avatar"&gt;
+                &lt;i class="material-icons circle blue"&gt;payment&lt;/i&gt;
+                &lt;span class="title"&gt;Harga&lt;/span&gt;
+                &lt;p&gt;
+                    &lt;mark&gt;&lt;b&gt;Rp 500.000,00 / bulan-&lt;/b&gt;&lt;/mark&gt;
+                &lt;/p&gt;
+                &lt;a href="#!" class="secondary-content"&gt;&lt;i class="material-icons"&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://localhost/C:\xampp\php\phpunit/assets/js/materialize.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(".button-collapse").sideNav();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+' contains "&lt;p&gt;Kamar tidur 3x4, Kamar mandi dalam, Dapur, Parkir Mobil&lt;/p&gt;".
+
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php:57
+</failure>
+      </testcase>
+      <testcase name="test_mykos_belumterdaftar" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="61" assertions="1" time="0.123159"/>
+      <testcase name="test_daftar_" class="Pencari_test" file="C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php" line="72" assertions="1" time="0.325961">
+        <failure type="PHPUnit_Framework_AssertionFailedError">Pencari_test::test_daftar_
+redirect() is not called.
+
+C:\xampp\htdocs\findingkostweb\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:360
+C:\xampp\htdocs\findingkostweb\application\tests\controllers\Pencari_test.php:81
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" fullPackage="Akun.model" tests="6" assertions="7" failures="0" errors="0" time="0.405748">
+      <testcase name="test_cek_akun_admin" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="11" assertions="1" time="0.053321"/>
+      <testcase name="test_akun" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="28" assertions="1" time="0.048598"/>
+      <testcase name="test_akun_notfound" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="43" assertions="1" time="0.100668"/>
+      <testcase name="test_penghuni_kos" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="49" assertions="1" time="0.045552"/>
+      <testcase name="test_semua_akun" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="63" assertions="2" time="0.103229"/>
+      <testcase name="test_cek_akun_not_found" class="Akun_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Akun_model_test.php" line="81" assertions="1" time="0.054380"/>
+    </testsuite>
+    <testsuite name="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" fullPackage="Kos.model" tests="10" assertions="11" failures="4" errors="0" time="1.391418">
+      <testcase name="test_cari" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="12" assertions="1" time="0.094794">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_cari
+Failed asserting that 3 matches expected 2.
+
+C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:14
+</failure>
+      </testcase>
+      <testcase name="test_harga" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="17" assertions="1" time="0.059316">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_harga
+Failed asserting that 6 matches expected 4.
+
+C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:19
+</failure>
+      </testcase>
+      <testcase name="test_kos" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="23" assertions="1" time="0.108133">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_kos
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+     'foto' =&gt; 'foto.jpg'
+-    'fasilitas' =&gt; 'Kamar tidur 3x2.5, Kamar mandi luar, Dapur'
++    'fasilitas' =&gt; 'Kamar tidur &lt;br&gt;Kamar mandi &lt;br&gt;Parkir'
+     'harga' =&gt; '500000'
+ )
+
+C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:36
+</failure>
+      </testcase>
+      <testcase name="test_kos_fail" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="39" assertions="1" time="0.083106"/>
+      <testcase name="test_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="44" assertions="1" time="0.051116"/>
+      <testcase name="test_akun_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="49" assertions="1" time="0.082318"/>
+      <testcase name="test_cari_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="64" assertions="1" time="0.051933"/>
+      <testcase name="test_harga_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="69" assertions="1" time="0.072088"/>
+      <testcase name="test_kos_notfound" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="74" assertions="1" time="0.092336"/>
+      <testcase name="test_tambah_hapus_penghuni" class="Kos_model_test" file="C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php" line="79" assertions="2" time="0.696278">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Kos_model_test::test_tambah_hapus_penghuni
+Failed asserting that 3 matches expected 1.
+
+C:\xampp\htdocs\findingkostweb\application\tests\models\Kos_model_test.php:88
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
