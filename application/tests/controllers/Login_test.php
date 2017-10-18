@@ -46,12 +46,24 @@ class Login_test extends TestCase
         $this->assertEquals('', $_SESSION['nama']);
         $this->assertEquals('', $_SESSION['status']);
     }
-    
     public function test_aksi_login_nopassword(){
       //  $this->assertFalse( isset($_SESSION['username']) );
         $this->request('POST', 'Login/aksi_login',
             [
                 'Username' => 'cicici',
+                'Upassword' => '',
+            ]);
+        $output = $this->request('GET', 'Login');
+        $this->assertContains('<a href="#" class="active" id="login-form-link">Login</a>', $output);
+        $this->assertEquals('', $_SESSION['nama']);
+        $this->assertEquals('', $_SESSION['status']);
+    }
+    
+    public function test_aksi_login_nousernamenopassword(){
+      //  $this->assertFalse( isset($_SESSION['username']) );
+        $this->request('POST', 'Login/aksi_login',
+            [
+                'Username' => '',
                 'Upassword' => '',
             ]);
         $output = $this->request('GET', 'Login');
@@ -79,6 +91,20 @@ class Login_test extends TestCase
         $this->request('POST', 'Login/aksi_login',
             [
                 'Username' => 'cicici',
+                'Upassword' => 'unmatch',
+            ]);
+        $output = $this->request('GET', 'Login/aksi_login');
+        $this->assertContains('<label>USERNAME / PASSWORD SALAH</label>', $output);
+        
+        $this->assertEquals('', $_SESSION['nama']);
+        $this->assertEquals('', $_SESSION['status']);
+    }
+    
+    public function test_aksi_login_usernamepasswordunmatch(){
+      //  $this->assertFalse( isset($_SESSION['username']) );
+        $this->request('POST', 'Login/aksi_login',
+            [
+                'Username' => 'unmatch',
                 'Upassword' => 'unmatch',
             ]);
         $output = $this->request('GET', 'Login/aksi_login');
