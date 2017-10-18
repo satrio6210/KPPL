@@ -6,17 +6,19 @@ class Home extends CI_Controller {
 	public function __construct() {
   		parent::__construct();
   		$this->load->model('Mymodel');
+                $this->load->helper('form');
+                $this->load->library('form_validation');
+                $this->load->library('upload');
   	//	$this->load->library('encryption');
  	}
 
  	public function index() {
-		
-        if($this->session->userdata('status')!='login')
+		if($this->session->userdata('status') != "login")
+          //          $this->session->userdata('status') != "login"
                     {$this->load->view('viewHome');
 		}else
                     {$this->load->view('viewHomeUser');
 		}
-        //$this->load->view('viewHome');
 	}
 	
 
@@ -71,10 +73,8 @@ class Home extends CI_Controller {
     }
 
     public function updatePhoto(){
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-        $this->load->library('upload');
         $is_submit = $this->input->post('is_submit');
+     //   $isUpload = $this->input->post('Upload');
     
         if(isset($is_submit) && $is_submit == 1){
             $fileUpload = array();
@@ -86,6 +86,7 @@ class Home extends CI_Controller {
             );
             $Username = (string)($this->session->userdata('nama'));
             $this->upload->initialize($config);
+            
             if($this->upload->do_upload('userfile')){
                 $fileUpload = $this->upload->data();
                 $isUpload = TRUE;
@@ -95,7 +96,6 @@ class Home extends CI_Controller {
                 $data =array(
                 'Ufoto' => './images/' . $fileUpload['file_name']
                 );
-                
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/viewProfile');
             }

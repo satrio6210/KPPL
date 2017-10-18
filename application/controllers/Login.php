@@ -52,5 +52,5 @@ class Login extends CI_Controller{
             $this->session->unset_userdata('nama');
             $this->session->unset_userdata('status');
             $this->session->sess_destroy();
-            redirect(); }
+            redirect("index.php/Home"); }
 }
