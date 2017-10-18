@@ -74,7 +74,6 @@ class Home extends CI_Controller {
 
     public function updatePhoto(){
         $is_submit = $this->input->post('is_submit');
-        
      //   $isUpload = $this->input->post('Upload');
     
         if(isset($is_submit) && $is_submit == 1){
@@ -99,13 +98,10 @@ class Home extends CI_Controller {
                 );
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/viewProfile');
-         }   
-     }
+            }
         }else{
-            //$isUpload = FALSE;
             $data['user'] = $this->Mymodel->get_profile_id($Username);
             $this->load->view('viewProfil', $data);
-            //$this->load->Home('index');
         }
   }
 
