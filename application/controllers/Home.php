@@ -105,6 +105,7 @@ class Home extends CI_Controller {
         }
   }
 
+ /*
  /*   public function updateProfile(){
         $this->load->helper('form');
         $this->load->library('form_validation');
