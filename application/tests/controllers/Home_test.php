@@ -78,6 +78,25 @@ class Home_test extends TestCase
         $this->assertContains('<label>REGISTER SUKSES</label>', $output);
     }
     
+    public function test_registerData_gadafoto(){
+        $target = "./images/".basename($_FILES['Ufoto']['name']);
+        $this->request('POST', 'Home/registerData',
+            [
+             //   'tmp_name' => 'true',
+             //   'Ufoto' => '$target',
+             //   'tmp_name' => '',
+                'register-submit' => 'true',
+                'Username' => 'farchan',
+                'Upassword' => 'farchan',
+                'Uname' => 'farchan r',
+                'Uemail' => 'farchan@email.com',
+                'Uphone' => '87657656',
+            ]);
+      //  $this->assertRedirect('index.php/Home/registerData');
+        $output = $this->request('GET', 'Login/aksi_login');
+        $this->assertContains('<label>REGISTER SUKSES</label>', $output);
+    }
+    
     public function test_updatePhoto(){
         $this->request('POST', 'Home/updatePhoto',
             [
