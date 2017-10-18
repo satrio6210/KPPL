@@ -137,7 +137,7 @@
                 <input type="hidden" name="is_submit" value="1" />
               </div>
                 <div>
-                  <span><input type="submit" value="Update"></span>
+                  <span><input type="submit" value="Update">Update</span>
               </div>
               </form>
           <?php echo form_close(); ?>
