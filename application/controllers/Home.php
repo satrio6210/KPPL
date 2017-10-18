@@ -105,42 +105,6 @@ class Home extends CI_Controller {
         }
   }
 
- /*
- /*   public function updateProfile(){
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-
-            $session = (string)($this->session->userdata('Uname'));
-            $user = $session;
-            $isUpload = true;
-
-            if($isUpload){
-                $Username = $this->input->post('Username');
-                $Upassword = $this->input->post('Upassword');
-                $Uktp = $this->input->post('Uktp');
-                $Uname  = $this->input->post('Uname');
-                $Uemail = $this->input->post('Uemail');
-                $Uphone = $this->input->post('Uphone');
-                $Uaddress = $this->input->post('Uaddress');
-                $data =array(
-                'Username' => $Username,
-                'Upassword' => md5($password),
-                'Uktp' => $Uktp,
-                'Uname' => $Uname,
-                'Uemail' => $Uemail,
-                'Uphone' => $Uphone,
-                'Uaddress' => $Uaddress
-                );
-                
-                $this->Mymodel->update_profile($user, $data);
-                redirect('index.php/Home/ViewProfile');
-            }
-
-            else{
-                $data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
-
-            }
-        } */
+ 
 
 }
