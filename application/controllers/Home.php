@@ -76,7 +76,7 @@ class Home extends CI_Controller {
         $is_submit = $this->input->post('is_submit');
      //   $isUpload = $this->input->post('Upload');
     
-        if(isset($is_submit) && $is_submit == 1){
+       // if(isset($is_submit) && $is_submit == 1){
             $fileUpload = array();
             $isUpload = FALSE;
             $config = array(
@@ -99,27 +99,29 @@ class Home extends CI_Controller {
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/viewProfile');
             }
-        }else{
-            $data['user'] = $this->Mymodel->get_profile_id($Username);
-            $this->load->view('viewProfil', $data);
-        }
+        //}else{
+         //   $data['user'] = $this->Mymodel->get_profile_id($Username);
+          //  $this->load->view('viewProfil', $data);
+        //}
   }
 
  
-        public function updateProfile(){
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-
-            $submit = $this->input->post('submit');
-
+    /*    public function updateProfile(){
+            $this->form_validation->set_rules('Uktp', 'KTP', 'required');
+            $this->form_validation->set_rules('Uname', 'Name', 'required');
+            $this->form_validation->set_rules('Uemail', 'Email', 'required');
+            $this->form_validation->set_rules('Uphone', 'Phone', 'required');
+            $this->form_validation->set_rules('Uaddress', 'Address', 'required');
             //$session = (string)($this->session->userdata('Uname'));
-            $Username = (string)($this->session->userdata('nama'));
+            $Username = $this->session->userdata('nama');
             $user = $session;
-            $isUpload = true;
-
-            if($isUpload){
-                //$Username = $this->input->post('Username');
-                //$Upassword = $this->input->post('Upassword');
+            
+            if($this->form_validation->run() == false){
+                $data['user'] = $this->Mymodel->get_profile_id($Username);
+                $this->load->view('viewProfil', $data);
+            }
+            
+            else{
                 $Uktp = $this->input->post('Uktp');
                 $Uname  = $this->input->post('Uname');
                 $Uemail = $this->input->post('Uemail');
@@ -139,12 +141,6 @@ class Home extends CI_Controller {
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/ViewProfile');
             }
-
-            else{
-                $data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
-
-            }
-        } 
+        } */
 
 }

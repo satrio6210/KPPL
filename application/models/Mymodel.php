@@ -16,11 +16,11 @@
 		    return $this->db->update('user', $data);
 		}
 
-		public function get_profile_id($username){ //read database
+	/*	public function get_profile_id($username){ //read database
 		    $this->db->where('username', $username);
 		    $query = $this->db->get('user'); //mengambil data dari table barang dimana kode_barang = $kode_barang
 		    return $query->row_array(); //data disimpan dalam row
-		}
+		} */
 
 	}
 ?>
