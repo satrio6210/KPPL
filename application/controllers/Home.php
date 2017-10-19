@@ -105,9 +105,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           //  $this->load->view('viewProfil', $data);
         //}
         }
-    }
 
-    /*    public function updateProfile(){
+        public function updateProfile(){
             $this->form_validation->set_rules('Uktp', 'KTP', 'required');
             $this->form_validation->set_rules('Uname', 'Name', 'required');
             $this->form_validation->set_rules('Uemail', 'Email', 'required');
@@ -142,5 +141,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/ViewProfile');
             }
-        } */
+        }
+    }
 ?>

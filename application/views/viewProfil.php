@@ -150,27 +150,32 @@
             <?php echo form_open_multipart('index.php/Home/updateProfile/'); ?>
             <form method="post">
                 <div class="form-group">
-                  <input readonly type="text" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="<?php echo $Uktp; ?>"/>
+                  <label for="Uktp" class="control-label col-xs-4">Nomor KTP</label>
+                  <input type="text" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="<?php echo $Uktp; ?>"/>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input readonly  type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="<?php echo $Uname; ?>" />
+                  <label for="Uname" class="control-label col-xs-4">Nama Panjang</label>
+                  <input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="<?php echo $Uname; ?>" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input readonly type="email" class="form-control" name="Uemail" id="Uemail" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" value="<?php echo $Uemail; ?>"/>
+                  <label for="Uemail" class="control-label col-xs-4">Email</label>
+                  <input type="email" class="form-control" name="Uemail" id="Uemail" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" value="<?php echo $Uemail; ?>"/>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input readonly type="text" class="form-control" name="Uphone" id="Uphone" placeholder="Nomor Handphone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value="<?php echo $Uphone; ?>" />
+                  <label for="Uphone" class="control-label col-xs-4">Nomor HP</label>
+                  <input type="text" class="form-control" name="Uphone" id="Uphone" placeholder="Nomor Handphone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value="<?php echo $Uphone; ?>" />
                   <div class="validation"> </div>
                 </div>
                 <div class="form-group">
-                  <textarea readonly class="form-control" name="Uaddress" id="Uaddress" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Alamat" value="<?php echo $Uaddress; ?>"><?php echo $Uaddress; ?></textarea>
+                  <label for="uaddress" class="control-label col-xs-4">Alamat</label>
+                  <textarea class="form-control" name="Uaddress" id="Uaddress" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Alamat" value="<?php echo $Uaddress; ?>"><?php echo $Uaddress; ?></textarea>
                   <div class="validation"></div>
                 </div>
               </div>
-                <!--<div class="text-center"><button type="submit" value="Update">Update</button></div>-->
+                <div class="text-center"><button type="submit" value="Update">Update</button></div>
             </form>
             <?php echo form_close(); ?>
           </div>
