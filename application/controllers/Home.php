@@ -22,6 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 
         public function registerData(){
+            if (isset($_POST['register-submit'])){
                 $Uktp = $_POST['Uktp'];
                 $Username = $_POST['Username'];
                 $Upassword = $_POST['Upassword'];
@@ -40,12 +41,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $query = $this->Mymodel->tambah_akun($data_insert);
 
                 if($query == false){
+//                    redirect("index.php/Login");
                     $data['err_message'] = "REGISTER GAGAL. KTP/Username anda telah terdaftar.";
                     $this->load->view('viewLogin', $data);
                 }else{
+//                    redirect("index.php/Login");
                     $data['err_message'] = "REGISTER SUKSES";
-                    $this->load->view('viewLogin', $data);
+                    $this->load->view('viewLogin', $data);  
                 }
+            }else{
+                redirect('index.php/Login');
+            }
         }
 
         public function viewProfile(){
