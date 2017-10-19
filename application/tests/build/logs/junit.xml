@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="19" assertions="27" failures="3" errors="1" time="1.610714">
-    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="10" assertions="8" failures="2" errors="0" time="0.874832">
-      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="18" assertions="1" time="0.068906"/>
-      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="25" assertions="1" time="0.073712"/>
-      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="32" assertions="1" time="0.056715"/>
-      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="39" assertions="1" time="0.066348"/>
-      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="47" assertions="1" time="0.061219"/>
-      <testcase name="test_view_profile_bisa" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="54" assertions="1" time="0.062583"/>
-      <testcase name="test_registerData" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="62" assertions="1" time="0.145163">
+  <testsuite name="CodeIgniter Application Test Suite" tests="19" assertions="27" failures="3" errors="1" time="1.792206">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="10" assertions="8" failures="2" errors="0" time="1.023509">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="16" assertions="1" time="0.072925"/>
+      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="23" assertions="1" time="0.062736"/>
+      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="30" assertions="1" time="0.065044"/>
+      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="37" assertions="1" time="0.066947"/>
+      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="45" assertions="1" time="0.062255"/>
+      <testcase name="test_view_profile_bisa" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="52" assertions="1" time="0.069101"/>
+      <testcase name="test_registerData" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="60" assertions="1" time="0.261832">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_registerData
 Failed asserting that '&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -224,10 +224,10 @@ $(function() {
 &lt;/html&gt;
 ' contains "&lt;label&gt;REGISTER SUKSES&lt;/label&gt;".
 
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:78
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:76
 </failure>
       </testcase>
-      <testcase name="test_registerData_gadafoto" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="81" assertions="1" time="0.189766">
+      <testcase name="test_registerData_gadafoto" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="79" assertions="1" time="0.217772">
         <failure type="PHPUnit_Framework_ExpectationFailedException">Home_test::test_registerData_gadafoto
 Failed asserting that '&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -443,35 +443,35 @@ $(function() {
 &lt;/html&gt;
 ' contains "&lt;label&gt;REGISTER SUKSES&lt;/label&gt;".
 
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:97
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php:92
 </failure>
       </testcase>
-      <testcase name="test_updatePhoto" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="100" assertions="0" time="0.061111"/>
-      <testcase name="test_updateProfile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="116" assertions="0" time="0.089309"/>
+      <testcase name="test_updatePhoto" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="95" assertions="0" time="0.059341"/>
+      <testcase name="test_updateProfile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="111" assertions="0" time="0.085556"/>
     </testsuite>
-    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="9" assertions="19" failures="1" errors="1" time="0.735883">
-      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="18" assertions="1" time="0.055455"/>
-      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="26" assertions="0" time="0.058590">
+    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="9" assertions="19" failures="1" errors="1" time="0.768697">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="16" assertions="1" time="0.055400"/>
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="24" assertions="0" time="0.065398">
         <failure type="PHPUnit_Framework_AssertionFailedError">Login_test::test_aksi_login
 redirect() is not called.
 
 C:\xampp\htdocs\tekumamba\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:360
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php:33
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php:31
 </failure>
       </testcase>
-      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="37" assertions="3" time="0.098773"/>
-      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="49" assertions="0" time="0.082459">
+      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="35" assertions="3" time="0.098385"/>
+      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="48" assertions="0" time="0.088641">
         <error type="PHPUnit_Framework_Exception">Login_test::test_aksi_login_nopassword
 PHPUnit_Framework_Exception: Argument #2 of PHPUnit_Framework_Assert::assertContains() must be a array, iterator or string
 
-C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php:57
+C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php:56
 </error>
       </testcase>
-      <testcase name="test_aksi_login_nousernamenopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="62" assertions="3" time="0.090943"/>
-      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="75" assertions="3" time="0.094732"/>
-      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="89" assertions="3" time="0.100212"/>
-      <testcase name="test_aksi_login_usernamepasswordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="103" assertions="3" time="0.094734"/>
-      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="117" assertions="3" time="0.059985"/>
+      <testcase name="test_aksi_login_nousernamenopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="61" assertions="3" time="0.086970"/>
+      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="74" assertions="3" time="0.108885"/>
+      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="88" assertions="3" time="0.105154"/>
+      <testcase name="test_aksi_login_usernamepasswordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="102" assertions="3" time="0.097970"/>
+      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="116" assertions="3" time="0.061894"/>
     </testsuite>
   </testsuite>
 </testsuites>
