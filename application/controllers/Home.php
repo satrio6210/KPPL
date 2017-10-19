@@ -77,7 +77,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $is_submit = $this->input->post('is_submit');
      //     $isUpload = $this->input->post('Upload');
     
-       //   if(isset($is_submit) && $is_submit == 1){
+    //      if(isset($is_submit)){
+          //   && $is_submit == 1
             $fileUpload = array();
             $isUpload = FALSE;
             $config = array(
@@ -99,12 +100,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 );
                 $this->Mymodel->update_profile($Username, $data);
                 redirect('index.php/Home/viewProfile');
+            }else{
+                redirect('index.php/Home/viewProfile');
             }
-        //}else{
-         //   $data['user'] = $this->Mymodel->get_profile_id($Username);
-          //  $this->load->view('viewProfil', $data);
-        //}
         }
+//        }else{
+  //          echo yes;
+  //          $data['user'] = $this->Mymodel->get_profile_id($Username);
+  //          $this->load->view('viewProfil', $data);
+  //      }
 
         public function updateProfile(){
             $this->form_validation->set_rules('Uktp', 'KTP', 'required');
