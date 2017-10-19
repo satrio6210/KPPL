@@ -10,6 +10,21 @@
             return $this->db->update('user', $data);
 	}
 
+
+        public function tambah_akun($data_insert) {
+            $this->db->select('*');
+            $this->db->from('user');
+            $this->db->where('Uktp', $data_insert['Uktp']);
+            $this->db->or_where('Username', $data_insert['Username']);
+       
+            $exist = ( $this->db->get()->num_rows() > 0 ) ? true : false ;
+            if ( ! $exist ) {
+                $query = $this->db->insert('user', $data_insert);
+                return ( ! $query ) ?  $this->db->error() : true; 
+            }
+            return false;
+        }
+
     }
 
 

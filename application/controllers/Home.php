@@ -22,32 +22,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 
         public function registerData(){
-            if (isset($_POST['register-submit'])){
-                $target = "./images/".basename($_FILES['Ufoto']['name']);
+                $Uktp = $_POST['Uktp'];
                 $Username = $_POST['Username'];
                 $Upassword = $_POST['Upassword'];
                 $Uname =  $_POST['Uname'];
                 $Uemail = $_POST['Uemail'];
                 $Uphone = $_POST['Uphone'];
                 $data_insert = array(
+                                'Uktp' => $Uktp,
                                 'Username' => $Username,
                                 'Upassword' => md5($Upassword),
                                 'Uname' => $Uname,
                                 'Uemail' => $Uemail,
                                 'Uphone' => $Uphone,
-                                'Ufoto' => $target
+                             //   'Ufoto' => $target
                 );
-            
-                if(is_uploaded_file($_FILES['Ufoto']['tmp_name'])){
-                    move_uploaded_file($_FILES['Ufoto']['tmp_name'], $target);
-                    $data['err_message'] = "REGISTER SUKSES";
+                $query = $this->Mymodel->tambah_akun($data_insert);
+
+                if($query == false){
+                    $data['err_message'] = "REGISTER GAGAL. KTP/Username anda telah terdaftar.";
                     $this->load->view('viewLogin', $data);
-                } else {
+                }else{
                     $data['err_message'] = "REGISTER SUKSES";
                     $this->load->view('viewLogin', $data);
                 }
-                $res = $this->db->insert('user', $data_insert);
-            }
         }
 
         public function viewProfile(){
@@ -100,8 +98,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          //   $data['user'] = $this->Mymodel->get_profile_id($Username);
           //  $this->load->view('viewProfil', $data);
         //}
+        }
     }
-}
 
     /*    public function updateProfile(){
             $this->form_validation->set_rules('Uktp', 'KTP', 'required');

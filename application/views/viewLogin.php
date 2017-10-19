@@ -154,24 +154,27 @@
 									</div>
 								</form>
 								<form id="register-form" action="<?php echo base_url('index.php/Home/registerData'); ?>" method="post" role="form" enctype="multipart/form-data" style="display: none;">
+									<div class="form-group">
+										<input type="number" name="Uktp" id="Uktp" tabindex="1" class="form-control" placeholder="No. KTP" autocomplete="off" required="required">
 					                  <div class="form-group">
 					                    <input type="text" name="Uname" id="Uname" tabindex="1" class="form-control" placeholder="Your Name" value="" autocomplete="off" required="required">
 					                  </div>
-									<div class="form-group">
-										<input type="text" name="Username" id="Username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off" required="required">
-									</div>
+									
 									<div class="form-group">
 										<input type="email" name="Uemail" id="Uemail" tabindex="1" class="form-control" placeholder="Email Address" autocomplete="off" required="required">
+									</div>
+									<div class="form-group">
+										<input type="text" name="Username" id="Username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off" required="required">
 									</div>
 									<div class="form-group">
 										<input type="password" name="Upassword" id="Upassword" tabindex="1" class="form-control" placeholder="Password" autocomplete="off" required="required">
 									
 									<div class="form-group">
 										<input type="number" name="Uphone" id="Uphone" tabindex="1" class="form-control" placeholder="No. Telepon" autocomplete="off" required="required">
-									</div>
+							<!--		</div>
 										<div>
 											<input type="file" name="Ufoto">
-										</div>
+										</div> -->
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
