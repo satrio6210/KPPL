@@ -149,7 +149,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $this->session->unset_userdata('status');
                 $this->session->sess_destroy();
                 redirect('index.php/Login');
-            }else{ redirect('index.php/Login'); }
-        } 
-    }
+            }else{ redirect('index.php/Login'); } } }
 ?>

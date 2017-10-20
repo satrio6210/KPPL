@@ -66,14 +66,14 @@
             $Username = 'nasywa';
             $Uktpsebelum = '52151001';
             $Uktpsesudah = '52151001';
-            $Unamesebelum = 'nasywa toka';
-            $Unamesesudah = 'nasywa tokab';
-            $Uemailsebelum = 'nasywatok@tok.coma';
-            $Uemailsesudah = 'nasywatok@tok.comab';
-            $Uphonesebelum = '1212121a';
-            $Uphonesesudah = '1212121ab';
-            $Uaddresssebelum = 'jalan toka';
-            $Uaddresssesudah = 'jalan tokab';
+            $Unamesebelum = 'nasywa tokab';
+            $Unamesesudah = 'nasywa tok';
+            $Uemailsebelum = 'nasywatok@tok.comab';
+            $Uemailsesudah = 'nasywatok@tok.com';
+            $Uphonesebelum = '1212121ab';
+            $Uphonesesudah = '1212121';
+            $Uaddresssebelum = 'jalan tokab';
+            $Uaddresssesudah = 'jalan tok';
             
            $profilsebelum = $this->obj->get_update($Username,
                                       $Uktpsebelum,
@@ -92,10 +92,10 @@
            $this->request('POST', 'Home/updateProfile',
                 [
                 'Uktp' => '52151001',
-                'Uname' => 'nasywa tokab',
-                'Uemail' => 'nasywatok@tok.comab',
-                'Uphone' => '1212121ab',
-                'Uaddress' => 'jalan tokab'
+                'Uname' => 'nasywa tok',
+                'Uemail' => 'nasywatok@tok.com',
+                'Uphone' => '1212121',
+                'Uaddress' => 'jalan tok'
                 ]);
             $profilsebelum2 = $this->obj->get_update($Username,
                                       $Uktpsebelum,
