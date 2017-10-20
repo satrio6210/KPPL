@@ -59,21 +59,21 @@
             $this->assertContains('<h3 class="section-title">Profile</h3>', $output);
     //    $this->assertContains('', $output);
         }
-     /*   
+        
         public function test_updateProfile(){
             $_SESSION['nama'] = "nasywa";
             $_SESSION['status'] = "login";
             $Username = 'nasywa';
             $Uktpsebelum = '52151001';
             $Uktpsesudah = '52151001';
-            $Unamesebelum = 'nasywa tok1abc';
-            $Unamesesudah = 'nasywa tok';
-            $Uemailsebelum = 'nasywatok@tok.com1abc';
-            $Uemailsesudah = 'nasywatok@tok.com';
-            $Uphonesebelum = '12121211abc';
-            $Uphonesesudah = '1212121';
-            $Uaddresssebelum = 'jalan tok1abc';
-            $Uaddresssesudah = 'jalan tok';
+            $Unamesebelum = 'nasywa toka';
+            $Unamesesudah = 'nasywa tokab';
+            $Uemailsebelum = 'nasywatok@tok.coma';
+            $Uemailsesudah = 'nasywatok@tok.comab';
+            $Uphonesebelum = '1212121a';
+            $Uphonesesudah = '1212121ab';
+            $Uaddresssebelum = 'jalan toka';
+            $Uaddresssesudah = 'jalan tokab';
             
            $profilsebelum = $this->obj->get_update($Username,
                                       $Uktpsebelum,
@@ -92,10 +92,10 @@
            $this->request('POST', 'Home/updateProfile',
                 [
                 'Uktp' => '52151001',
-                'Uname' => 'nasywa tok',
-                'Uemail' => 'nasywatok@tok.com',
-                'Uphone' => '1212121',
-                'Uaddress' => 'jalan tok'
+                'Uname' => 'nasywa tokab',
+                'Uemail' => 'nasywatok@tok.comab',
+                'Uphone' => '1212121ab',
+                'Uaddress' => 'jalan tokab'
                 ]);
             $profilsebelum2 = $this->obj->get_update($Username,
                                       $Uktpsebelum,
@@ -139,12 +139,12 @@
             $this->assertEquals($total_setelah, $totalsebelum+1);
             $this->assertContains('<label>REGISTER SUKSES</label>', $outputsukses);
         }
-        */
+        
         public function test_registerDatareload(){
             $this->request('GET', 'Home/registerData');
             $this->assertRedirect('index.php/Login');
         }
-  /*      
+        
         public function test_registerData_double(){
             $totalsebelum = $this->obj->get_total_data('1',
                                       'testing',
@@ -173,7 +173,7 @@
         }
         
         public function test_hapusAkun(){
-          $_SESSION['nama'] = "b";
+          $_SESSION['nama'] = "a";
           $_SESSION['status'] = "login";
           $this->request('POST', 'Home/hapusAkun');
           $this->assertRedirect('index.php/Login');
@@ -190,26 +190,6 @@
           $this->assertEquals('', $_SESSION['nama']);
           $this->assertEquals('', $_SESSION['status']);
         }
-        
-        
- 
-  /*      public function test_registerData_kosong(){
-            $this->request('POST', 'Home/registerData',
-                [
-                'register-submit' => 'false',
-                'Uktp' => '',
-                'Uname' => '',
-                'Uemail' => '',
-                'Username' => '',
-                'Upassword' => '',
-                'Uphone' => ''
-                ]);
-            $this->assertRedirect('index.php/Login');
-        }
-        
-       
-        
-      */
     }
 ?>
 

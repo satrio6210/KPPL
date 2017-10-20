@@ -20,6 +20,13 @@
             $output = $this->request('GET', 'Login/index');
             $this->assertRedirect('index.php/Home');
         }
+        
+        public function test_index_nosession(){
+            $_SESSION['nama'] = "";
+            $_SESSION['status'] = "";
+            $output = $this->request('GET', 'Login/index');
+            $this->assertContains('<a href="#" class="active" id="login-form-link">Login</a>', $output);
+        }
     
         public function test_aksi_login(){
       //  $this->assertFalse( isset($_SESSION['username']) );
