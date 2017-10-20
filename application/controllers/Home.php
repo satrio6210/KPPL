@@ -75,10 +75,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function updatePhoto(){
             $is_submit = $this->input->post('is_submit');
-     //     $isUpload = $this->input->post('Upload');
-    
-    //      if(isset($is_submit)){
-          //   && $is_submit == 1
             $fileUpload = array();
             $isUpload = FALSE;
             $config = array(
@@ -120,17 +116,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $Username = $this->session->userdata('nama');
             $user = $session;
             
-            if($this->form_validation->run() == false){
-                $data['user'] = $this->Mymodel->get_profile_id($Username);
-                $this->load->view('viewProfil', $data);
-            }
-            
-            else{
-                $Uktp = $this->input->post('Uktp');
-                $Uname  = $this->input->post('Uname');
-                $Uemail = $this->input->post('Uemail');
-                $Uphone = $this->input->post('Uphone');
-                $Uaddress = $this->input->post('Uaddress');
+
+                $this->load->helper('security');
+                $Uktp = $this->input->post('Uktp', true);
+                $Uname  = $this->input->post('Uname', true);
+                $Uemail = $this->input->post('Uemail', true);
+                $Uphone = $this->input->post('Uphone', true);
+                $Uaddress = $this->input->post('Uaddress', true);
                
                 $data =array(
                 'Username' => $Username,
@@ -143,9 +135,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 );
                 
                 $this->Mymodel->update_profile($Username, $data);
-                redirect('index.php/Home/ViewProfile');
-            }
-        }
+                redirect('index.php/Home/ViewProfile'); }
 
 
         public function hapusAkun(){
@@ -159,10 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $this->session->unset_userdata('status');
                 $this->session->sess_destroy();
                 redirect('index.php/Login');
-            }else{
-            //$this->load->view('admin/login');
-                redirect('index.php/Login');
-            }
+            }else{ redirect('index.php/Login'); }
         } 
     }
 ?>
