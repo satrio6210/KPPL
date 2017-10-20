@@ -146,5 +146,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 redirect('index.php/Home/ViewProfile');
             }
         }
+
+
+        public function hapusAkun(){
+            if($this->session->userdata('nama')){
+                $session = (string)($this->session->userdata('nama'));
+                $Username = $session;
+                $profil = $this->Mymodel->GetProfile("where Username = '$Username'");
+                $id = $profil[0]['no'];
+                $this->Mymodel->delete_data($id);
+                $this->session->unset_userdata('nama');
+                $this->session->unset_userdata('status');
+                $this->session->sess_destroy();
+                redirect('index.php/Login');
+            }else{
+            //$this->load->view('admin/login');
+                redirect('index.php/Login');
+            }
+        } 
     }
 ?>

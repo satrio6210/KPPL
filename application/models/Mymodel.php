@@ -31,5 +31,9 @@
 		    $query = $this->db->get('user'); //mengambil data dari table barang 
 		    return $query->row_array(); //data disimpan dalam row
 		}
-    }
+
+        public function delete_data($id){
+           return $this->db->delete('user', array('no'=>$id));
+            }
+     }   
 ?>

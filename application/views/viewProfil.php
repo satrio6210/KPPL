@@ -178,6 +178,14 @@
                 <div class="text-center"><button type="submit" value="Update">Update</button></div>
             </form>
             <?php echo form_close(); ?>
+            <div>
+              <p> </p>
+            </div>
+          <?php echo form_open_multipart('index.php/Home/hapusAkun/'); ?>
+               <form method="post">
+                <div class="text-center"><button type="submit" value="Delete Akun">Delete Akun</button></div>
+              </form>
+            <?php echo form_close(); ?>
           </div>
         </div>
         
