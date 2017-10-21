@@ -149,6 +149,7 @@
             <div id="errormessage"></div>
             <?php echo form_open_multipart('index.php/Home/updateProfile/'); ?>
             <form method="post">
+            <input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>" style="display:none">
                 <div class="form-group">
                   <label for="Uktp" class="control-label col-xs-4">Nomor KTP</label>
                   <input type="text" required="required" name="Uktp" class="form-control" id="Uktp" placeholder="Nomor KTP" data-rule="minlen:10" data-msg="Please enter at least 10 chars" value="<?php echo $Uktp; ?>"/>

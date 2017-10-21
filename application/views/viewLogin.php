@@ -132,6 +132,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<form id="login-form" action="<?php echo base_url('index.php/Login/aksi_login'); ?>" method="post" role="form" style="display: block;">
+									<input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>" style="display:none">
 									<div class="form-group">
 										<input type="text" name="Username" id="Username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off" required="required">
 									</div>
@@ -154,6 +155,7 @@
 									</div>
 								</form>
 								<form id="register-form" action="<?php echo base_url('index.php/Home/registerData'); ?>" method="post" role="form" enctype="multipart/form-data" style="display: none;">
+								<input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>" style="display:none">
 									<div class="form-group">
 										<input type="number" name="Uktp" id="Uktp" tabindex="1" class="form-control" placeholder="No. KTP" autocomplete="off" required="required">
 									<div>
