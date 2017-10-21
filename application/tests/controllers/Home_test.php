@@ -66,13 +66,13 @@
             $Username = 'nasywa';
             $Uktpsebelum = '52151001';
             $Uktpsesudah = '52151001';
-            $Unamesebelum = 'nasywa tokab';
+            $Unamesebelum = 'nasywa tok12';
             $Unamesesudah = 'nasywa tok';
-            $Uemailsebelum = 'nasywatok@tok.comab';
+            $Uemailsebelum = 'nasywatok@tok.com12';
             $Uemailsesudah = 'nasywatok@tok.com';
-            $Uphonesebelum = '1212121ab';
+            $Uphonesebelum = '121212112';
             $Uphonesesudah = '1212121';
-            $Uaddresssebelum = 'jalan tokab';
+            $Uaddresssebelum = 'jalan tok12';
             $Uaddresssesudah = 'jalan tok';
             
            $profilsebelum = $this->obj->get_update($Username,
@@ -173,13 +173,25 @@
         }
         
         public function test_hapusAkun(){
-          $_SESSION['nama'] = "a";
-          $_SESSION['status'] = "login";
-          $this->request('POST', 'Home/hapusAkun');
-          $this->assertRedirect('index.php/Login');
-      //    $output = $this->request('GET', 'Login');
-          $this->assertEquals('', $_SESSION['nama']);
-          $this->assertEquals('', $_SESSION['status']);
+            $_SESSION['nama'] = "a";
+            $_SESSION['status'] = "login";
+            $totalsebelumdihapus = $this->obj->get_total_data('2',
+                                      'a',
+                                      'a@a.com',
+                                      'a',
+                                      'a',
+                                      '1');
+            $this->request('POST', 'Home/hapusAkun');
+            $totalsetelahdihapus = $this->obj->get_total_data('2',
+                                      'a',
+                                      'a@a.com',
+                                      'a',
+                                      'a',
+                                      '1');
+            $this->assertEquals($totalsetelahdihapus, $totalsebelumdihapus-1);
+            $this->assertRedirect('index.php/Login');
+            $this->assertEquals('', $_SESSION['nama']);
+            $this->assertEquals('', $_SESSION['status']);
         }
         
         public function test_hapusAkun_noSession(){

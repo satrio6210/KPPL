@@ -116,15 +116,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $Username = $this->session->userdata('nama');
             $user = $session;
             
-
-                $this->load->helper('security');
-                $Uktp = $this->input->post('Uktp', true);
-                $Uname  = $this->input->post('Uname', true);
-                $Uemail = $this->input->post('Uemail', true);
-                $Uphone = $this->input->post('Uphone', true);
-                $Uaddress = $this->input->post('Uaddress', true);
+            $this->load->helper('security');
+            $Uktp = $this->input->post('Uktp', true);
+            $Uname  = $this->input->post('Uname', true);
+            $Uemail = $this->input->post('Uemail', true);
+            $Uphone = $this->input->post('Uphone', true);
+            $Uaddress = $this->input->post('Uaddress', true);
                
-                $data =array(
+            $data =array(
                 'Username' => $Username,
                 'Upassword' => md5($password),
                 'Uktp' => $Uktp,
@@ -134,8 +133,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 'Uaddress' => $Uaddress
                 );
                 
-                $this->Mymodel->update_profile($Username, $data);
-                redirect('index.php/Home/ViewProfile'); }
+            $this->Mymodel->update_profile($Username, $data);
+            redirect('index.php/Home/ViewProfile'); }
 
 
         public function hapusAkun(){

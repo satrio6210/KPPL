@@ -18,8 +18,9 @@
         }
 
         function aksi_login(){
-            $Username = $this->input->post('Username');
-            $Upassword = $this->input->post('Upassword');
+            $this->load->helper('security');
+            $Username = $this->input->post('Username', true);
+            $Upassword = $this->input->post('Upassword', true);
             $where = array(
                     'Username' => $Username,
                     'Upassword' => md5($Upassword)

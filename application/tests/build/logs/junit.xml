@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="21" assertions="43" failures="0" errors="0" time="2.319389">
-    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="12" assertions="21" failures="0" errors="0" time="1.726230">
-      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="19" assertions="1" time="0.219060"/>
-      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="26" assertions="1" time="0.134077"/>
-      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="33" assertions="1" time="0.074826"/>
-      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="40" assertions="1" time="0.071552"/>
-      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="48" assertions="1" time="0.063241"/>
-      <testcase name="test_view_profile_bisa" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="55" assertions="1" time="0.078926"/>
-      <testcase name="test_updateProfile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="63" assertions="4" time="0.549764"/>
-      <testcase name="test_registerData" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="116" assertions="2" time="0.163810"/>
-      <testcase name="test_registerDatareload" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="143" assertions="1" time="0.058367"/>
-      <testcase name="test_registerData_double" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="148" assertions="2" time="0.079884"/>
-      <testcase name="test_hapusAkun" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="175" assertions="3" time="0.127180"/>
-      <testcase name="test_hapusAkun_noSession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="185" assertions="3" time="0.105543"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="21" assertions="44" failures="0" errors="0" time="2.014442">
+    <testsuite name="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" fullPackage="Home" tests="12" assertions="22" failures="0" errors="0" time="1.405108">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="19" assertions="1" time="0.187710"/>
+      <testcase name="test_index_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="26" assertions="1" time="0.060206"/>
+      <testcase name="test_index_namasessionsalah" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="33" assertions="1" time="0.061400"/>
+      <testcase name="test_view_profile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="40" assertions="1" time="0.083001"/>
+      <testcase name="test_view_profile_nosession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="48" assertions="1" time="0.079677"/>
+      <testcase name="test_view_profile_bisa" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="55" assertions="1" time="0.082072"/>
+      <testcase name="test_updateProfile" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="63" assertions="4" time="0.379879"/>
+      <testcase name="test_registerData" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="116" assertions="2" time="0.118447"/>
+      <testcase name="test_registerDatareload" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="143" assertions="1" time="0.058172"/>
+      <testcase name="test_registerData_double" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="148" assertions="2" time="0.090354"/>
+      <testcase name="test_hapusAkun" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="175" assertions="4" time="0.140737"/>
+      <testcase name="test_hapusAkun_noSession" class="Home_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Home_test.php" line="199" assertions="3" time="0.063453"/>
     </testsuite>
-    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="9" assertions="22" failures="0" errors="0" time="0.593159">
-      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="16" assertions="1" time="0.053958"/>
-      <testcase name="test_index_nosession" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="24" assertions="1" time="0.051346"/>
-      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="31" assertions="2" time="0.058723"/>
-      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="42" assertions="3" time="0.067079"/>
-      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="55" assertions="3" time="0.067993"/>
-      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="68" assertions="3" time="0.071562"/>
-      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="82" assertions="3" time="0.064534"/>
-      <testcase name="test_aksi_login_usernamepasswordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="96" assertions="3" time="0.068388"/>
-      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="110" assertions="3" time="0.089576"/>
+    <testsuite name="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" fullPackage="Login" tests="9" assertions="22" failures="0" errors="0" time="0.609334">
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="16" assertions="1" time="0.051809"/>
+      <testcase name="test_index_nosession" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="24" assertions="1" time="0.051589"/>
+      <testcase name="test_aksi_login" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="31" assertions="2" time="0.059336"/>
+      <testcase name="test_aksi_login_nousername" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="42" assertions="3" time="0.066730"/>
+      <testcase name="test_aksi_login_nopassword" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="55" assertions="3" time="0.079509"/>
+      <testcase name="test_aksi_login_usernameunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="68" assertions="3" time="0.068056"/>
+      <testcase name="test_aksi_login_passwordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="82" assertions="3" time="0.068736"/>
+      <testcase name="test_aksi_login_usernamepasswordunmatch" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="96" assertions="3" time="0.072392"/>
+      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\tekumamba\application\tests\controllers\Login_test.php" line="110" assertions="3" time="0.091177"/>
     </testsuite>
   </testsuite>
 </testsuites>

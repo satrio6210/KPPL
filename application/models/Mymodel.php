@@ -47,14 +47,14 @@
             return $query->num_rows();
         }
        
-		public function get_profile_id($username){ //read database
-		    $this->db->where('username', $username);
-		    $query = $this->db->get('user'); //mengambil data dari table barang 
-		    return $query->row_array(); //data disimpan dalam row
-		}
+        public function get_profile_id($username){ //read database
+            $this->db->where('username', $username);
+            $query = $this->db->get('user'); //mengambil data dari table barang 
+            return $query->row_array(); //data disimpan dalam row
+        }
 
         public function delete_data($id){
-           return $this->db->delete('user', array('no'=>$id));
-            }
+            return $this->db->delete('user', array('no'=>$id));
+        }
      }   
 ?>
