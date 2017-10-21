@@ -11,7 +11,6 @@
     class Home_test extends TestCase{
         public function setUp(){
             $this->resetInstance();
-      //      $this->CI->model(Mymodel);
             $this->CI->load->model('Mymodel');
             $this->obj = $this->CI->Mymodel;
         }
@@ -31,7 +30,6 @@
         }
     
         public function test_index_namasessionsalah(){
-       // $_SESSION['nama'] = "yaya";
             $_SESSION['status'] = "salah";
             $output = $this->request('GET', 'Home/index');
             $this->assertContains('<h1>Welcome to Tekumamba</h1>', $output);
@@ -42,7 +40,6 @@
             $_SESSION['status'] = "login";
             $output = $this->request('GET', 'Home/viewProfile');
             $this->assertContains('<h3 class="section-title">Profile</h3>', $output);
- //       $this->assertContains('<input type="text" name="Uname" class="form-control" id="Uname" placeholder="Nama Panjang" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="testing">', $output);
         }
     
         public function test_view_profile_nosession(){
@@ -57,7 +54,6 @@
             $_SESSION['status'] = "login";
             $output = $this->request('GET', 'Home/viewProfile');
             $this->assertContains('<h3 class="section-title">Profile</h3>', $output);
-    //    $this->assertContains('', $output);
         }
         
         public function test_updateProfile(){
